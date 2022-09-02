@@ -5,7 +5,7 @@ export default {
     
     const { origin, pathname, search } = new URL(req.url)
     
-    return new Repsonse(JSON.stringify({
+    return new Response(JSON.stringify({
       api: {
         icon: '🚀',
         name: 'apis.do',
