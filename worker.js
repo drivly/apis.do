@@ -22,7 +22,7 @@ router.all('*', async (req, env, ctx) => {
   req.user = await env.CTX.fetch(req).then(res => res.json())
 })
 
-router.get('/api')
+router.get('/api', ({user}) => json({ api, user }))
 
 
 export default {
