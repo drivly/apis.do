@@ -15,7 +15,7 @@ const api = {
     integrations: 'https://apis.do/integrations',
   },
   site: 'https://apis.do',
-  repo: 'https://github.com/drivly/api.cf',
+  repo: 'https://github.com/drivly/apis.do',
 }
 
 router.all('*', async (req, env, ctx) => {
@@ -24,6 +24,7 @@ router.all('*', async (req, env, ctx) => {
 
 router.get('/api', ({user}) => json({ api, user }))
 
+router.all('*', ({user}) => json({ api, user }))
 
 export default {
   fetch: router.handle 
