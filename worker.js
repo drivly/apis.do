@@ -19,7 +19,7 @@ const api = {
 }
 
 router.all('*', async (req, env, ctx) => {
-  req.user = await env.CTX.fetch(req).then(res => res.json())
+  req.user = await env.CTX.fetch(req).then(res => res.json()).user
 })
 
 router.get('/api', ({user}) => json({ api, user }))
