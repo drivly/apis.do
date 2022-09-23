@@ -1,7 +1,7 @@
 export const api = {
   icon: '🚀',
   name: 'apis.do',
-  description: 'API Directory',
+  description: 'Hypermedia-driven API Directory',
   url: 'https://apis.do/api',
   type: 'https://apis.do/api',
   endpoints: {
