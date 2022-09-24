@@ -22,7 +22,8 @@ const categories = {
 export default {
   fetch: async (req, env) => {
     const { user, origin, requestId, method, body, time, pathSegments, query } = await env.CTX.fetch(req).then(res => res.json())
-    return new Response(JSON.stringify({ api, requestId, categories, pathSegments, user }, null, 2), { headers: { 'content-type': 'application/json; charset=utf-8' }})
+    
+    return new Response(JSON.stringify({ api, time, requestId, categories, pathSegments, user }, null, 2), { headers: { 'content-type': 'application/json; charset=utf-8' }})
   }
 }
 
