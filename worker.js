@@ -11,6 +11,7 @@ export const api = {
   site: 'https://apis.do',
   login: 'https://apis.do/login',
   signup: 'https://apis.do/signup',
+  subscribe: 'https://apis.do/subscribe',
   repo: 'https://github.com/drivly/apis.do',
 }
 
