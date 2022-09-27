@@ -1,5 +1,4 @@
-# apis.do
-Composable APIs
+# APIs.do - Hypermedia-driven API Directory
 
 <https://apis.do/api>
 
