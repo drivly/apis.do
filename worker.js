@@ -22,15 +22,20 @@ const apis = {
     'API Directory': 'https://apis.directory/api',
     'API Management': 'https://api.mgmt.do/api',
     'API Testing': 'https://api.qa/api',
+    'Proxy': 'https://proxies.do/api',
     'Webhooks': 'https://webhooks.do/api',
   },
   primitives: {
+    'APIs': 'https://apis.do/api',
     'Triggers': 'https://triggers.do/api',
     'Searches': 'https://searches.do/api',
     'Actions': 'https://actions.do/api',
   },
   saas: {
+    'Analytics': 'https://analytics.do/api',
+    'Funnels': 'https://funnels.do/api',
     'Subscriptions': 'https://subscriptions.do/api',
+    'Users': 'https://users.do/api',
   },
   security: {
     'API Keys': 'https://apikeys.do/api',
@@ -59,9 +64,32 @@ const apis = {
   state: {
     'Finite State Machines': 'https://state.do/api',
   },
+  pubsub: {
+    'PubSub': 'https://pubsub.do/api',
+    'Triggers': 'https://triggers.do/api',
+  },
+  iot: {
+    'MQTT': 'https://mqtt.do/api',
+  },
   data: {
     'Database': 'https://database.do/api',
     'Bucket': 'https://database.do/api',
+  },
+  cicd: {
+    'Builds': 'https://builds.do/api',
+  },
+  web: {
+    'Caches': 'https://caches.do/api',
+    'Fetch': 'https://fetch.do/api',
+    'Scraper': 'https://scraper.do/api',
+  },
+  durableObjects: {
+    'Alarms': 'https://alarms.do/api',
+    'Backup': 'https://backup.do/api',
+    'Restore': 'https://restore.do/api',
+  },
+  analytics: {
+    'Analytics': 'https://analytics.do/api',
   },
   communication: {
     'Alerts': 'https://alerts.do/api',
@@ -72,15 +100,31 @@ const apis = {
   },
   schema: {
     'Schema Generation': 'https://schema.do/api',
+    'GraphQL Schema': 'https://gql.do/api',
+  },
+  personas: {
+    'Builders': 'https://builders.do/api',
+  },
+  pipes: {
+    'Chains': 'https://chains.do/api',
+    'Pipes': 'https://pipes.do/api',
+  },
+  ai: {
+    'Artificial Intelligences': 'https://ais.do/api',
+    'GPT-3 Templates': 'https://gpt.do/api',
+    'GPT-3 Codex': 'https://codex.do/api',
   },
   code: {
     'Abstract Syntax Tree Generation': 'https://syntax.do/api',
+    'Algorithm Library': 'https://algorithms.do/api',
     'ESBuild Transpilation': 'https://esbuild.do/api',
   },
-  qa: {
-    'API Testing': 'https://api.qa',
-    'API Status Page': 'https://api.status.page.as',
-    'Status Page': 'https://status.page.as',
+  testing: {
+    'API Testing': 'https://api.qa/api',
+    'API Status Page': 'https://api.status.page.as/api',
+    'Performance Benchmarking': 'https://benchmark.do/api',
+    'Performance Testing': 'https://perf.as/api',
+    'Status Page': 'https://status.page.as/api',
   },
   cloudflare: {
     'API': 'https://api.cf/api',
@@ -92,9 +136,30 @@ const apis = {
     'Workers': 'https://workers.cf/api',
     'Workers for Platforms': 'https://workers.do/api',
   },
-  finance: {
+  integrations: {
+    'Airtable Base API': 'https://base.do/api',
+    'Zapier Zap Generation': 'https://zap.do/api',
+  },
+  marketing: {
+    'API Landing Pages': 'https://api.page/api',
+    'Blogs': 'https://blogs.do/api',
+    'Chat Boxes': 'https://chat.boxes.do/api',
+  },
+  commerce: {
     'ACH Transfers': 'https://ach.do/api',
+    'Bill of Sale': 'https://bos.do/api',
+    'Checkout': 'https://checkout.do/api',
     'Subscriptions': 'https://subscriptions.do/api',
+  },
+  workflows: {
+    'Workflows': 'https://workflows.do/api',
+  },
+  automotive: {
+    'Automotive Data': 'https://auto.dev/api',
+    'Auto Commerce APIs': 'https://driv.ly/api',
+  },
+  jobs: {
+    'Job Application': 'https://career.do/api',
   },
 }
 
