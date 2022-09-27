@@ -1,4 +1,4 @@
-# APIs.do - Hypermedia-driven API Directory
+# APIs.do - Hypermedia API Directory
 
 <https://apis.do/api>
 
