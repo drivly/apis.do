@@ -39,6 +39,13 @@ const apis = {
     'snake_case_keys': 'https://snake.case.do/api',
     'Title Case Keys': 'https://title.case.do/api',
   },
+  data: {
+    'Schema Generation': 'https://schema.do/api',
+  },
+  code: {
+    'Abstract Syntax Tree Generation': 'https://syntax.do/api',
+    'ESBuild Transpilation': 'https://esbuild.do/api',
+  },
   qa: {
     'API Testing': 'https://api.qa',
     'API Status Page': 'https://api.status.page.as',
