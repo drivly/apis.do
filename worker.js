@@ -17,16 +17,27 @@ export const api = {
 
 const categories = {
   api: {
-    'APIs': 'https://apis.do',
-    'API Context': 'https://ctx.do',
-    'API Directory': 'https://apis.directory',
-    'API Management': 'https://api.mgmt.do',
-    'API Testing': 'https://api.qa',
+    'APIs': 'https://apis.do/api',
+    'API Context': 'https://ctx.do/api',
+    'API Directory': 'https://apis.directory/api',
+    'API Management': 'https://api.mgmt.do/api',
+    'API Testing': 'https://api.qa/api',
   },
   security: {
-    'API Keys': 'https://apikeys.do',
-    'JWT Tokens': 'https://oauth.do',
-    'OAuth 2.0': 'https://oauth.do',
+    'API Keys': 'https://apikeys.do/api',
+    'JWT Tokens': 'https://jwt.do/api',
+    'OAuth 2.0': 'https://oauth.do/api',
+  },
+  transformation: {
+    'JSON Path': 'https://camel.case.do/api',
+    'Lodash': 'https://lodash.do/api',
+    'Pluck': 'https://pluck.do/api',
+  },
+  utilities: {
+    'camelCaseKeys': 'https://camel.case.do/api',
+    'kebab-case-keys': 'https://kebab.case.do/api',
+    'snake_case_keys': 'https://snake.case.do/api',
+    'Title Case Keys': 'https://title.case.do/api',
   },
   qa: {
     'API Testing': 'https://api.qa',
@@ -34,11 +45,11 @@ const categories = {
     'Status Page': 'https://status.page.as',
   },
   cloudflare: {
-    'API': 'https://api.cf',
-    'Durable Objects': 'https://api.cf',
-    'KV': 'https://kv.cf',
-    'Workers': 'https://workers.cf',
-    'Workers for Platforms': 'https://workers.do',
+    'API': 'https://api.cf/api',
+    'Durable Objects': 'https://do.cf/api',
+    'KV': 'https://kv.cf/api',
+    'Workers': 'https://workers.cf/api',
+    'Workers for Platforms': 'https://workers.do/api',
   }
 }
 
