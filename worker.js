@@ -64,6 +64,7 @@ const apis = {
     'Bucket': 'https://database.do/api',
   },
   communication: {
+    'Alerts': 'https://alerts.do/api',
     'Discord': 'https://discord.do/api',
     'Email': 'https://emails.do/api',
     'Text': 'https://texts.do/api',
@@ -85,10 +86,15 @@ const apis = {
     'API': 'https://api.cf/api',
     'D1': 'https://d1.cf/api',
     'Durable Objects': 'https://do.cf/api',
+    'DO Alarms': 'https://alarms.cf/api',
     'KV': 'https://kv.cf/api',
     'Service Bindings': 'https://service.do/api',
     'Workers': 'https://workers.cf/api',
     'Workers for Platforms': 'https://workers.do/api',
+  },
+  finance: {
+    'ACH Transfers': 'https://ach.do/api',
+    'Subscriptions': 'https://subscriptions.do/api',
   },
 }
 
