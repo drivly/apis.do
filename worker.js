@@ -48,6 +48,9 @@ const apis = {
     'YAML Conversions': 'https://yaml.do/api',
     ;
   },
+  state: {
+    'Finite State Machines': 'https://state.do/api',
+  },
   data: {
     'Database': 'https://database.do/api',
     'Bucket': 'https://database.do/api',
@@ -78,7 +81,7 @@ const apis = {
     'Service Bindings': 'https://service.do/api',
     'Workers': 'https://workers.cf/api',
     'Workers for Platforms': 'https://workers.do/api',
-  }
+  },
 }
 
 export default {
