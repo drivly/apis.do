@@ -16,15 +16,37 @@ export const api = {
 }
 
 const categories = {
-   
-  
+  api: {
+    'APIs': 'https://apis.do',
+    'API Context': 'https://ctx.do',
+    'API Directory': 'https://apis.directory',
+    'API Management': 'https://api.mgmt.do',
+    'API Testing': 'https://api.qa',
+  },
+  security: {
+    'API Keys': 'https://apikeys.do',
+    'JWT Tokens': 'https://oauth.do',
+    'OAuth 2.0': 'https://oauth.do',
+  },
+  qa: {
+    'API Testing': 'https://api.qa',
+    'API Status Page': 'https://api.status.page.as',
+    'Status Page': 'https://status.page.as',
+  },
+  cloudflare: {
+    'API': 'https://api.cf',
+    'Durable Objects': 'https://api.cf',
+    'KV': 'https://kv.cf',
+    'Workers': 'https://workers.cf',
+    'Workers for Platforms': 'https://workers.do',
+  }
 }
 
 export default {
   fetch: async (req, env) => {
     const { user, origin, requestId, method, body, time, pathSegments, query } = await env.CTX.fetch(req).then(res => res.json())
     
-    return new Response(JSON.stringify({ api, time, requestId, categories, pathSegments, user }, null, 2), { headers: { 'content-type': 'application/json; charset=utf-8' }})
+    return new Response(JSON.stringify({ api, categories, user }, null, 2), { headers: { 'content-type': 'application/json; charset=utf-8' }})
   }
 }
 
