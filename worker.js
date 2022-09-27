@@ -22,6 +22,7 @@ const apis = {
     'API Directory': 'https://apis.directory/api',
     'API Management': 'https://api.mgmt.do/api',
     'API Testing': 'https://api.qa/api',
+    'Webhooks': 'https://webhooks.do/api',
   },
   security: {
     'API Keys': 'https://apikeys.do/api',
@@ -39,7 +40,25 @@ const apis = {
     'snake_case_keys': 'https://snake.case.do/api',
     'Title Case Keys': 'https://title.case.do/api',
   },
+  formats: {
+    'CSV Conversions': 'https://csv.do/api',
+    'Markdown Conversions': 'https://markdown.do/api',
+    'JavaScript Conversions': 'https://markdown.do/api',
+    'TypeScript Conversions': 'https://markdown.do/api',
+    'YAML Conversions': 'https://yaml.do/api',
+    ;
+  },
   data: {
+    'Database': 'https://database.do/api',
+    'Bucket': 'https://database.do/api',
+  },
+  communication: {
+    'Discord': 'https://discord.do/api',
+    'Email': 'https://emails.do/api',
+    'Text': 'https://texts.do/api',
+    'Slack': 'https://slack.do/api',
+  },
+  schema: {
     'Schema Generation': 'https://schema.do/api',
   },
   code: {
@@ -53,8 +72,10 @@ const apis = {
   },
   cloudflare: {
     'API': 'https://api.cf/api',
+    'D1': 'https://d1.cf/api',
     'Durable Objects': 'https://do.cf/api',
     'KV': 'https://kv.cf/api',
+    'Service Bindings': 'https://service.do/api',
     'Workers': 'https://workers.cf/api',
     'Workers for Platforms': 'https://workers.do/api',
   }
