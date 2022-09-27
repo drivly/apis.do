@@ -58,6 +58,7 @@ const apis = {
   },
   security: {
     'API Keys': 'https://apikeys.do/api',
+    'Identity': 'https://identity.do/api',
     'JWT Tokens': 'https://jwt.do/api',
     'OAuth 2.0': 'https://oauth.do/api',
   },
@@ -158,9 +159,12 @@ const apis = {
   },
   durableObjects: {
     'Alarms': 'https://alarms.do/api',
-    'Backup': 'https://backup.do/api',
     'Copy': 'https://copy.do/api',
+    'Backup': 'https://backup.do/api',
     'Restore': 'https://restore.do/api',
+    'Import': 'https://import.do/api',
+    'Export': 'https://export.do/api',
+    'Indexes': 'https://indexes.do/api',
   },
   analytics: {
     'Analytics': 'https://analytics.do/api',
@@ -238,6 +242,7 @@ const apis = {
   },
   design: {
     'icons': 'https://icons.do/api',
+    'images': 'https://images.do/api',
   },
   marketing: {
     'API Landing Pages': 'https://api.page/api',
@@ -253,6 +258,7 @@ const apis = {
     'Bill of Sale': 'https://bos.do/api',
     'Checkout': 'https://checkout.do/api',
     'eContract': 'https://econtract.do/api',
+    'Income Verification': 'https://income.do/api',
     'Subscriptions': 'https://subscriptions.do/api',
   },
   workflows: {
@@ -283,9 +289,11 @@ const apis = {
   fun: {
     '🚀 Emojis': 'https://builders.do/api',
   },
-  jobs: {
-    'Job Application': 'https://career.do/api',
+  opportunities: {
+    'Careers': 'https://career.do/api',
     'Project Gigs': 'https://gigs.do/api',
+    'Interns': 'https://interns.do/api',
+    'Open Source Sponsorships': 'https://sponsors.do/api',
   },
 }
 
