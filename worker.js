@@ -15,8 +15,8 @@ export const api = {
   repo: 'https://github.com/drivly/apis.do',
 }
 
-const categories = {
-  api: {
+const apis = {
+  core: {
     'APIs': 'https://apis.do/api',
     'API Context': 'https://ctx.do/api',
     'API Directory': 'https://apis.directory/api',
@@ -57,7 +57,7 @@ export default {
   fetch: async (req, env) => {
     const { user, origin, requestId, method, body, time, pathSegments, query } = await env.CTX.fetch(req).then(res => res.json())
     
-    return new Response(JSON.stringify({ api, categories, user }, null, 2), { headers: { 'content-type': 'application/json; charset=utf-8' }})
+    return new Response(JSON.stringify({ api, apis, user }, null, 2), { headers: { 'content-type': 'application/json; charset=utf-8' }})
   }
 }
 
