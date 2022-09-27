@@ -24,6 +24,14 @@ const apis = {
     'API Testing': 'https://api.qa/api',
     'Webhooks': 'https://webhooks.do/api',
   },
+  primitives: {
+    'Triggers': 'https://triggers.do/api',
+    'Searches': 'https://searches.do/api',
+    'Actions': 'https://actions.do/api',
+  },
+  saas: {
+    'Subscriptions': 'https://subscriptions.do/api',
+  },
   security: {
     'API Keys': 'https://apikeys.do/api',
     'JWT Tokens': 'https://jwt.do/api',
