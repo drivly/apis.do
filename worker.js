@@ -87,7 +87,6 @@ const apis = {
     'JavaScript Conversions': 'https://markdown.do/api',
     'TypeScript Conversions': 'https://markdown.do/api',
     'YAML Conversions': 'https://yaml.do/api',
-    ;
   },
   convert: {
     'Convert': 'https://convert.do/api',
