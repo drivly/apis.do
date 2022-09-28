@@ -99,6 +99,8 @@ const categories = {
     'JSON to XML': 'https://xml.do/api',
     'Markdown to JSON': 'https://markdown.do/api',
     'Markdown to HTML': 'https://markdown.do/api',
+    'Text to Javascript': 'https://text.convert.do/api',
+    'Text to JSON': 'https://text.convert.do/api',
     'YAML to CSV': 'https://yaml.do/api',
     'YAML to JSON': 'https://yaml.do/api',
   },
