@@ -388,11 +388,13 @@ const categories = {
     'Non-Disclosure Agreement': 'https://nda.do/api',
     'Notarize': 'https://notarize.do/api',
     'Payments': 'https://payments.do/api',
+    'Pre-Approvals': 'https://pre.approvals.do/api',
     'Services': 'https://services.do/api',
     'Subscriptions': 'https://subscriptions.do/api',
   },
   workflows: {
     'Workflows': 'https://workflows.do/api',
+    'Approvals': 'https://approvals.do/api',
     'Concierge': 'https://concierge.do/api',
     'Notary': 'https://notary.do/api',
   },
