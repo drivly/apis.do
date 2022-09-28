@@ -26,6 +26,7 @@ const categories = {
     'Searches': 'https://searches.do/api',
     'Actions': 'https://actions.do/api',
     'Entity': 'https://entity.do/api',
+    'Package ': 'https://pkg.do/api',
     'Resource': 'https://resource.do/api',
     'CRUD': 'https://crud.do/api',
   },
@@ -47,6 +48,7 @@ const categories = {
     'Customers': 'https://customers.do/api',
     'Dashboard': 'https://dash.do/api',
     'Funnels': 'https://funnels.do/api',
+    'Monetize': 'https://monetize.do/api',
     'Subscriptions': 'https://subscriptions.do/api',
     'Users': 'https://users.do/api',
   },
@@ -86,6 +88,17 @@ const categories = {
   },
   convert: {
     'Convert': 'https://convert.do/api',
+    'CSV to JSON': 'https://csv.do/api',
+    'CSV to YAML': 'https://csv.do/api',
+    'Javascript to JSON': 'https://es6.do/api',
+    'JSON to CSV': 'https://csv.do/api',
+    'JSON to Javascript': 'https://es6.do/api',
+    'JSON to Markdown': 'https://markdown.do/api',
+    'JSON to YAML': 'https://yaml.do/api',
+    'Markdown to JSON': 'https://markdown.do/api',
+    'Markdown to HTML': 'https://markdown.do/api',
+    'YAML to CSV': 'https://yaml.do/api',
+    'YAML to JSON': 'https://yaml.do/api',
   },
   search: {
     'Searches': 'https://searches.do/api',
@@ -100,6 +113,7 @@ const categories = {
   },
   state: {
     'Finite State Machines': 'https://state.do/api',
+    'State Machines': 'https://state.machines.do/api',
   },
   pubsub: {
     'PubSub': 'https://pubsub.do/api',
@@ -186,6 +200,9 @@ const categories = {
     'API Management': 'https://api.mgmt.do/api',
     'Testing': 'https://api.qa/api',
     'GraphQL': 'https://graphql.do/api',
+    'Mashup': 'https://mashup.do/api',
+    'Middleware': 'https://middleware.do/api',
+    'Monetize': 'https://monetize.do/api',
     'Proxy': 'https://proxies.do/api',
     'Rate Limit': 'https://rate.limit.do/api',
     'Webhooks': 'https://webhooks.do/api',
@@ -223,6 +240,7 @@ const categories = {
   content: {
     'Content': 'https://content.do/api',
     'Markdown': 'https://markdown.do/api',
+    'MDX': 'https://mdx.do/api',
   },
   code: {
     'Abstract Syntax Tree Generation': 'https://syntax.do/api',
@@ -232,6 +250,9 @@ const categories = {
     'Eval ': 'https://eval.do/api',
     'Gist ': 'https://gist.do/api',
     'Lint ': 'https://lint.do/api',
+    'Loops ': 'https://loops.do/api',
+    'Modules ': 'https://modules.do/api',
+    'Packages ': 'https://pkg.do/api',
   },
   testing: {
     'API Testing': 'https://api.qa/api',
@@ -307,6 +328,7 @@ const categories = {
     'Goals': 'https://goals.do/api',
     'Hiring': 'https://hiring.do/api',
     'Ideate': 'https://ideate.do/api',
+    'Mission': 'https://mission.do/api',
   },
   tbd: {
     'directory.do': 'https://directory.do/api',
