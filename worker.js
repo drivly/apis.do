@@ -80,11 +80,12 @@ const categories = {
     'Title Case Keys': 'https://title.case.do/api',
   },
   formats: {
-    'CSV Conversions': 'https://csv.do/api',
-    'Markdown Conversions': 'https://markdown.do/api',
-    'JavaScript Conversions': 'https://markdown.do/api',
-    'TypeScript Conversions': 'https://markdown.do/api',
-    'YAML Conversions': 'https://yaml.do/api',
+    'CSV': 'https://csv.do/api',
+    'Markdown': 'https://markdown.do/api',
+    'JavaScript': 'https://es6.do/api',
+    'TypeScript': 'https://typescript.do/api',
+    'XML': 'https://xml.do/api',
+    'YAML': 'https://yaml.do/api',
   },
   convert: {
     'Convert': 'https://convert.do/api',
