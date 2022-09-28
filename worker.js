@@ -75,11 +75,12 @@ const apis = {
   utilities: {
     'Decode': 'https://decode.do/api',
     'Flatten': 'https://flatten.do/api',
+    'Filter': 'https://filter.do/api',
+    'Iterate': 'https://iterate.do/api',
     'camelCaseKeys': 'https://camel.case.do/api',
     'kebab-case-keys': 'https://kebab.case.do/api',
     'snake_case_keys': 'https://snake.case.do/api',
     'Title Case Keys': 'https://title.case.do/api',
-    'Filter': 'https://filter.do/api',
   },
   formats: {
     'CSV Conversions': 'https://csv.do/api',
