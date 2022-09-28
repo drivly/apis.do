@@ -182,7 +182,7 @@ const categories = {
     'Functions': 'https://functions.do/api',
     'Dynamic Function': 'https://function.do/api',
   },
-  api: {
+  apis: {
     'API Management': 'https://api.mgmt.do/api',
     'Testing': 'https://api.qa/api',
     'GraphQL': 'https://graphql.do/api',
