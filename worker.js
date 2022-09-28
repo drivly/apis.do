@@ -34,6 +34,7 @@ const categories = {
     'Objects': 'https://objects.do/api',
     'Queue': 'https://queue.do/api',
     'Count': 'https://count.do/api',
+    'Services': 'https://services.do/api',
     'SDK': 'https://sdk.do/api',
   },
   saas: {
@@ -353,6 +354,7 @@ const categories = {
     'Non-Disclosure Agreement': 'https://nda.do/api',
     'Notarize': 'https://notarize.do/api',
     'Payments': 'https://payments.do/api',
+    'Services': 'https://services.do/api',
     'Subscriptions': 'https://subscriptions.do/api',
   },
   workflows: {
