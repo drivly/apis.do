@@ -286,6 +286,7 @@
       "Goals": "https://goals.do/api",
       "Hiring": "https://hiring.do/api",
       "Ideate": "https://ideate.do/api"
+      "Interns": "https://interns.do/api",
     },
     "tbd": {
       "directory.do": "https://directory.do/api",
@@ -297,7 +298,7 @@
     "opportunities": {
       "Careers": "https://career.do/api",
       "Project Gigs": "https://gigs.do/api",
-      "Interns": "https://interns.do/api",
+      "Internships": "https://internships.do/api",
       "Open Source Sponsorships": "https://sponsors.do/api"
     }
   }
