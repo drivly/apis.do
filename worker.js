@@ -225,6 +225,15 @@ const categories = {
     'Rate Limit': 'https://rate.limit.do/api',
     'Webhooks': 'https://webhooks.do/api',
   },
+  crawling: {
+    'Crawl API': 'https://crawl.do/api',
+    'Crawler Management': 'https://crawler.do/api',
+    'Crawlers DO': 'https://crawler.do/api',
+    'Static Props': 'https://static.props.do/api',
+    'Scrapes API': 'https://scrapes.do/api',
+    'Scraper Management': 'https://scraper.do/api',
+    'Scrapers DO': 'https://scrapers.do/api',
+  },
   schema: {
     'Schema Generation': 'https://schema.do/api',
     'GraphQL Schema': 'https://gql.do/api',
@@ -279,6 +288,8 @@ const categories = {
     'Packages ': 'https://pkg.do/api',
     'Prettier ': 'https://prettier.do/api',
     'Props': 'https://props.do/api',
+    'Repo': 'https://repo.do/api',
+    'Repos': 'https://repos.do/api',
   },
   testing: {
     'API Testing': 'https://api.qa/api',
