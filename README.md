@@ -7,7 +7,7 @@ If you don't already have a browser extension to pretty-print JSON and make link
 
 Then you interactively use the API at: <https://apis.do/api>
 
-```
+```json
 {
   "api": {
     "icon": "🚀",
