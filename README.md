@@ -21,15 +21,9 @@
     "repo": "https://github.com/drivly/apis.do"
   },
   "apis": {
-    "api": {
+    "core": {
       "APIs": "https://apis.do/api",
-      "API Context": "https://ctx.do/api",
-      "API Directory": "https://apis.directory/api",
-      "API Management": "https://api.mgmt.do/api",
-      "API Testing": "https://api.qa/api",
-      "GraphQL": "https://graphql.do/api",
-      "Proxy": "https://proxies.do/api",
-      "Webhooks": "https://webhooks.do/api"
+      "Context": "https://ctx.do/api"
     },
     "primitives": {
       "APIs": "https://apis.do/api",
@@ -75,16 +69,18 @@
     "tools": {
       "Count": "https://count.do/api",
       "Counters": "https://counters.do/api",
-      "Debug": "https://debug.do/api"
+      "Debug": "https://debug.do/api",
+      "Logging": "https://logging.do/api"
     },
     "utilities": {
       "Decode": "https://decode.do/api",
       "Flatten": "https://flatten.do/api",
+      "Filter": "https://filter.do/api",
+      "Iterate": "https://iterate.do/api",
       "camelCaseKeys": "https://camel.case.do/api",
       "kebab-case-keys": "https://kebab.case.do/api",
       "snake_case_keys": "https://snake.case.do/api",
-      "Title Case Keys": "https://title.case.do/api",
-      "Filter": "https://filter.do/api"
+      "Title Case Keys": "https://title.case.do/api"
     },
     "formats": {
       "CSV Conversions": "https://csv.do/api",
@@ -95,6 +91,10 @@
     },
     "convert": {
       "Convert": "https://convert.do/api"
+    },
+    "search": {
+      "Searches": "https://searches.do/api",
+      "Lookup": "https://lookup.do/api"
     },
     "crypto": {
       "Encrypt": "https://encrypt.do/api",
@@ -116,7 +116,9 @@
     "data": {
       "Database": "https://database.do/api",
       "Bucket": "https://database.do/api",
-      "Examples": "https://examples.do/api"
+      "Examples": "https://examples.do/api",
+      "Lists": "https://lists.do/api",
+      "Loader": "https://loader.do/api"
     },
     "cicd": {
       "Builds": "https://builds.do/api",
@@ -168,7 +170,8 @@
       "Restore": "https://restore.do/api",
       "Import": "https://import.do/api",
       "Export": "https://export.do/api",
-      "Indexes": "https://indexes.do/api"
+      "Indexes": "https://indexes.do/api",
+      "Locations": "https://locations.do/api"
     },
     "analytics": {
       "Analytics": "https://analytics.do/api"
@@ -184,6 +187,14 @@
       "Functions": "https://functions.do/api",
       "Dynamic Function": "https://function.do/api"
     },
+    "apis": {
+      "API Management": "https://api.mgmt.do/api",
+      "Testing": "https://api.qa/api",
+      "GraphQL": "https://graphql.do/api",
+      "Proxy": "https://proxies.do/api",
+      "Rate Limit": "https://rate.limit.do/api",
+      "Webhooks": "https://webhooks.do/api"
+    },
     "schema": {
       "Schema Generation": "https://schema.do/api",
       "GraphQL Schema": "https://gql.do/api"
@@ -197,7 +208,9 @@
     "databases": {
       "Database": "https://database.do/api",
       "GraphDL": "https://graphdl.org/api",
-      "Graph Database": "https://graph.org/api"
+      "Graph Database": "https://graph.org/api",
+      "KeyV": "https://keyv.org/api",
+      "KVDB": "https://kvdb.org/api"
     },
     "pipes": {
       "Pipes": "https://pipes.do/api",
@@ -212,13 +225,18 @@
       "GPT-3 Templates": "https://gpt.do/api",
       "GPT-3 Codex": "https://codex.do/api"
     },
+    "content": {
+      "Content": "https://content.do/api",
+      "Markdown": "https://markdown.do/api"
+    },
     "code": {
       "Abstract Syntax Tree Generation": "https://syntax.do/api",
       "Algorithm Library": "https://algorithms.do/api",
       "ESBuild Transpilation": "https://esbuild.do/api",
       "ES6 ": "https://es6.do/api",
       "Eval ": "https://eval.do/api",
-      "Gist ": "https://gist.do/api"
+      "Gist ": "https://gist.do/api",
+      "Lint ": "https://lint.do/api"
     },
     "testing": {
       "API Testing": "https://api.qa/api",
@@ -240,6 +258,10 @@
       "Workers": "https://workers.cf/api",
       "Workers for Platforms": "https://workers.do/api"
     },
+    "libraries": {
+      "Lodash": "https://lodash.do/api",
+      "Lyra": "https://lyra.do/api"
+    },
     "integrations": {
       "Airtable Base API": "https://base.do/api",
       "Zapier Zap Generation": "https://zap.do/api"
@@ -255,6 +277,9 @@
       "Content": "https://content.do/api",
       "Drip Sequences": "https://drip.do/api",
       "Glyph": "https://glyph.do/api",
+      "Landing Pages": "https://landing.do/api",
+      "Launches": "https://launches.do/api",
+      "Logos": "https://logos.do/api",
       "Product Hunts": "https://product.hunts.do/api"
     },
     "commerce": {
@@ -279,6 +304,7 @@
       "Auto Commerce APIs": "https://driv.ly/api",
       "Dealer Service": "https://dealers.do/api",
       "Dealer API": "https://dealer.to/api",
+      "Listings API": "https://listings.do/api",
       "Electric Vehicles API": "https://evs.to/api"
     },
     "startup": {
@@ -286,7 +312,6 @@
       "Goals": "https://goals.do/api",
       "Hiring": "https://hiring.do/api",
       "Ideate": "https://ideate.do/api"
-      "Interns": "https://interns.do/api",
     },
     "tbd": {
       "directory.do": "https://directory.do/api",
@@ -298,7 +323,7 @@
     "opportunities": {
       "Careers": "https://career.do/api",
       "Project Gigs": "https://gigs.do/api",
-      "Internships": "https://internships.do/api",
+      "Interns": "https://interns.do/api",
       "Open Source Sponsorships": "https://sponsors.do/api"
     }
   }
