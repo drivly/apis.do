@@ -34,6 +34,7 @@ const categories = {
     'Objects': 'https://objects.do/api',
     'Queue': 'https://queue.do/api',
     'Count': 'https://count.do/api',
+    'SDK': 'https://sdk.do/api',
   },
   saas: {
     'Analytics': 'https://analytics.do/api',
@@ -145,6 +146,9 @@ const categories = {
   },
   http: {
     'Proxy': 'https://prxy.do/api',
+    'Redirects': 'https://redirects.do/api',
+    'Request': 'https://request.do/api',
+    'Rewrites': 'https://rewrites.do/api',
   },
   product: {
     'Products': 'https://products.do/api',
