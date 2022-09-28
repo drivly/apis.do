@@ -329,9 +329,6 @@
   }
 }
 ```
-# colo.fetch.do
-Fetch from different Colos
-
 
 ### Core:
   - [APIs:  ](https://apis.do/api)
