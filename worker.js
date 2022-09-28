@@ -22,6 +22,7 @@ const categories = {
     'Context': 'https://ctx.do/api',
   },
   primitives: {
+    'Primitives': 'https://primitives.do/api',
     'APIs': 'https://apis.do/api',
     'Triggers': 'https://triggers.do/api',
     'Searches': 'https://searches.do/api',
@@ -31,6 +32,8 @@ const categories = {
     'Resource': 'https://resource.do/api',
     'CRUD': 'https://crud.do/api',
     'Objects': 'https://objects.do/api',
+    'Queue': 'https://queue.do/api',
+    'Count': 'https://count.do/api',
   },
   saas: {
     'Analytics': 'https://analytics.do/api',
@@ -38,6 +41,8 @@ const categories = {
     'Dashboard': 'https://dash.do/api',
     'Funnels': 'https://funnels.do/api',
     'Monetize': 'https://monetize.do/api',
+    'Pricing': 'https://pricing.do/api',
+    'Products': 'https://products.do/api',
     'Subscriptions': 'https://subscriptions.do/api',
     'Users': 'https://users.do/api',
   },
@@ -142,8 +147,10 @@ const categories = {
     'Proxy': 'https://prxy.do/api',
   },
   product: {
+    'Products': 'https://products.do/api',
     'Features': 'https://features.do/api',
     'Feature Flags': 'https://feature.flags.do/api',
+    'Pricing': 'https://pricing.do/api',
   },
   events: {
     'Events': 'https://events.do/api',
@@ -177,6 +184,7 @@ const categories = {
     'Hostnames': 'https://hostnames.do/api',
     'Hostname API': 'https://hostname.do/api',
     'Name Servers': 'https://nameservers.do/api',
+    'Registrars': 'https://registrars.do/api',
   },
   durableObjects: {
     'Alarms': 'https://alarms.do/api',
@@ -222,6 +230,7 @@ const categories = {
     'Employees': 'https://employees.do/api',
     'Engineers': 'https://engineers.do/api',
     'Humans': 'https://humans.do/api',
+    'Programmers': 'https://programmers.do/api',
   },
   databases: {
     'Database': 'https://database.do/api',
@@ -230,6 +239,8 @@ const categories = {
     'KeyV': 'https://keyv.do/api',
     'KVDB': 'https://kvdb.do/api',
     'NoSQL': 'https://nosql.do/api',
+    'Query': 'https://query.do/api',
+    'Redis': 'https://redis.do/api',
     'SQLite': 'https://sqlite.do/api',
   },
   pipes: {
@@ -262,12 +273,15 @@ const categories = {
     'Loops ': 'https://loops.do/api',
     'Modules ': 'https://modules.do/api',
     'Packages ': 'https://pkg.do/api',
+    'Prettier ': 'https://prettier.do/api',
+    'Props': 'https://props.do/api',
   },
   testing: {
     'API Testing': 'https://api.qa/api',
     'API Status Page': 'https://api.status.page.as/api',
     'Performance Benchmarking': 'https://benchmark.do/api',
     'Performance Testing': 'https://perf.as/api',
+    'Random Data': 'https://random.do/api',
     'Status Page': 'https://status.page.as/api',
   },
   cloudflare: {
@@ -306,6 +320,7 @@ const categories = {
     'Landing Pages': 'https://landing.do/api',
     'Launches': 'https://launches.do/api',
     'Logos': 'https://logos.do/api',
+    'Pricing': 'https://pricing.do/api',
     'Product Hunts': 'https://product.hunts.do/api',
   },
   commerce: {
@@ -344,6 +359,7 @@ const categories = {
     'Ideate': 'https://ideate.do/api',
     'Mission': 'https://mission.do/api',
     'Objectives & Key Results': 'https://okr.do/api',
+    'Pricing': 'https://pricing.do/api',
   },
   tbd: {
     'Directory': 'https://directory.do/api',
