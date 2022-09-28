@@ -400,7 +400,8 @@ const categories = {
     'Dealer Service': 'https://dealers.do/api',
     'Dealer API': 'https://dealer.to/api',
     'Listings API': 'https://listings.do/api',
-    'Electric Vehicles API': 'https://evs.to/api',
+    'Electric Vehicles API': 'https://evs.do/api',
+    'Transport API': 'https://transport.do/api',
   },
   startup: {
     'Startups': 'https://startups.do/api',
