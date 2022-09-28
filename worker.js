@@ -140,6 +140,7 @@ const categories = {
     'Examples': 'https://examples.do/api',
     'Lists': 'https://lists.do/api',
     'Loader': 'https://loader.do/api',
+    'Sources': 'https://sources.do/api',
   },
   cicd: {
     'Builds': 'https://builds.do/api',
@@ -324,6 +325,7 @@ const categories = {
   },
   integrations: {
     'Airtable Base API': 'https://base.do/api',
+    'Google Sheets API': 'https://sheets.do/api',
     'Zapier Zap Generation': 'https://zap.do/api',
   },
   assets: {
