@@ -182,6 +182,7 @@ const categories = {
     'Flows': 'https://flows.do/api',
     'Pages': 'https://pages.do/api',
     'Scraper': 'https://scraper.do/api',
+    'Session': 'https://session.do/api',
     'Rewrites': 'https://rewrites.do/api',
     'Redirects': 'https://redirects.do/api',
   },
