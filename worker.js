@@ -119,6 +119,7 @@ const categories = {
     'Decrypt': 'https://decrypt.do/api',
     'Hashes': 'https://hashes.do/api',
     'HMAC': 'https://hmac.do/api',
+    'RSA': 'https://rsa.do/api',
     'Vault': 'https://vault.do/api',
   },
   state: {
@@ -254,6 +255,8 @@ const categories = {
     'NoSQL': 'https://nosql.do/api',
     'Query': 'https://query.do/api',
     'Redis': 'https://redis.do/api',
+    'Schema': 'https://schema.do/api',
+    'Select': 'https://select.do/api',
     'SQLite': 'https://sqlite.do/api',
   },
   pipes: {
@@ -290,6 +293,8 @@ const categories = {
     'Props': 'https://props.do/api',
     'Repo': 'https://repo.do/api',
     'Repos': 'https://repos.do/api',
+    'Scripts': 'https://scripts.do/api',
+    'SDK': 'https://sdk.do/api',
   },
   testing: {
     'API Testing': 'https://api.qa/api',
