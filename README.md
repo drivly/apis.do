@@ -1,4 +1,4 @@
-# APIs.do - Hypermedia API Directory 
+# APIs.do - Hypermedia API Directory
 
 
 ## Getting Started
