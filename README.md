@@ -1,6 +1,11 @@
 # APIs.do - Hypermedia API Directory
 
-<https://apis.do/api>
+
+## Getting Started
+
+If you don't already have a browser extension to pretty-print JSON and make links clickable, start by installing that: <https://extensions.do>
+
+Then you interactively use the API at: <https://apis.do/api>
 
 ```
 {
