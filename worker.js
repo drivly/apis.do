@@ -45,7 +45,9 @@ const categories = {
     'Monetize': 'https://monetize.do/api',
     'Pricing': 'https://pricing.do/api',
     'Products': 'https://products.do/api',
+    'Studio': 'https://studio.do/api',
     'Subscriptions': 'https://subscriptions.do/api',
+    'Subscribe': 'https://subscribe.do/api',
     'Users': 'https://users.do/api',
   },
   security: {
@@ -80,6 +82,15 @@ const categories = {
     'SCREAMING_SNAKE_CASE_KEYS': 'https://screaming.snake.case.do/api',
     'TitleCaseKeys': 'https://title.case.do/api',
     'Sentence case keys': 'https://sentence.case.do/api',
+  },
+  files: {
+    'Files': 'https://storage.do/api',
+    'Buckets': 'https://storage.do/api',
+    'Storage': 'https://storage.do/api',
+    'Backup': 'https://backup.do/api',
+    'Restore': 'https://restore.do/api',
+    'Import': 'https://import.do/api',
+    'Export': 'https://export.do/api',
   },
   formats: {
     'CSV': 'https://csv.do/api',
@@ -138,9 +149,13 @@ const categories = {
     'Database': 'https://database.do/api',
     'Bucket': 'https://database.do/api',
     'Examples': 'https://examples.do/api',
+    'Files': 'https://files.do/api',
     'Lists': 'https://lists.do/api',
     'Loader': 'https://loader.do/api',
     'Sources': 'https://sources.do/api',
+    'Storage': 'https://storage.do/api',
+    'Tag': 'https://tag.do/api',
+    'Tags': 'https://tag.do/api',
   },
   cicd: {
     'Builds': 'https://builds.do/api',
@@ -185,6 +200,8 @@ const categories = {
     'Session': 'https://session.do/api',
     'Rewrites': 'https://rewrites.do/api',
     'Redirects': 'https://redirects.do/api',
+    'Sites': 'https://sites.do/api',
+    'Streams': 'https://streams.do/api',
   },
   domains: {
     'CNAME Proxy': 'https://cname.do/api',
@@ -193,6 +210,7 @@ const categories = {
     'Hostname API': 'https://hostname.do/api',
     'Name Servers': 'https://nameservers.do/api',
     'Registrars': 'https://registrars.do/api',
+    'Subdomains': 'https://subdomains.do/api',
   },
   durableObjects: {
     'Alarms': 'https://alarms.do/api',
@@ -246,8 +264,10 @@ const categories = {
     'Builders': 'https://builders.do/api',
     'Employees': 'https://employees.do/api',
     'Engineers': 'https://engineers.do/api',
+    'Enterprises': 'https://enterprises.do/api',
     'Humans': 'https://humans.do/api',
     'Programmers': 'https://programmers.do/api',
+    'Startups': 'https://startups.do/api',
   },
   databases: {
     'Database': 'https://database.do/api',
@@ -261,6 +281,7 @@ const categories = {
     'Schema': 'https://schema.do/api',
     'Select': 'https://select.do/api',
     'SQLite': 'https://sqlite.do/api',
+    'Tables': 'https://tables.do/api',
   },
   pipes: {
     'Pipes': 'https://pipes.do/api',
@@ -281,7 +302,7 @@ const categories = {
     'MDX': 'https://mdx.do/api',
   },
   code: {
-    'Abstract Syntax Tree Generation': 'https://syntax.do/api',
+    'Abstract Syntax Tree': 'https://syntax.do/api',
     'Algorithm Library': 'https://algorithms.do/api',
     'ESBuild Transpilation': 'https://esbuild.do/api',
     'ES6 ': 'https://es6.do/api',
@@ -297,7 +318,10 @@ const categories = {
     'Repo': 'https://repo.do/api',
     'Repos': 'https://repos.do/api',
     'Scripts': 'https://scripts.do/api',
+    'Stacks': 'https://stacks.do/api',
+    'Syntax': 'https://syntax.do/api',
     'SDK': 'https://sdk.do/api',
+    'SWR': 'https://swr.do/api',
   },
   testing: {
     'API Testing': 'https://api.qa/api',
@@ -317,6 +341,7 @@ const categories = {
     'Environment': 'https://env.do/api',
     'KV': 'https://kv.cf/api',
     'Service Bindings': 'https://service.do/api',
+    'Startups': 'https://startups.cf/api',
     'Workers': 'https://workers.cf/api',
     'Workers for Platforms': 'https://workers.do/api',
   },
@@ -378,6 +403,7 @@ const categories = {
     'Electric Vehicles API': 'https://evs.to/api',
   },
   startup: {
+    'Startups': 'https://startups.do/api',
     'Experiment': 'https://experiment.do/api',
     'Goals': 'https://goals.do/api',
     'Hiring': 'https://hiring.do/api',
@@ -385,11 +411,14 @@ const categories = {
     'Mission': 'https://mission.do/api',
     'Objectives & Key Results': 'https://okr.do/api',
     'Pricing': 'https://pricing.do/api',
+    'Stacks': 'https://stacks.do/api',
   },
   tbd: {
     'Directory': 'https://directory.do/api',
     'Encrypted': 'https://encrypted.do/api',
     'Path': 'https://path.do/api',
+    'Stacks': 'https://stacks.do/api',
+    'Success': 'https://success.do/api',
   },
   glyph: {
     '入 Function': 'https://入.io/api',
@@ -406,6 +435,7 @@ const categories = {
   },
   fun: {
     '🚀 Emojis': 'https://emojis.do/api',
+    '✅ Streaks': 'https://streaks.do/api',
   },
   opportunities: {
     'Careers': 'https://career.do/api',
