@@ -57,6 +57,7 @@ const categories = {
     'OAuth 2.0': 'https://oauth.do/api',
   },
   transformation: {
+    'Transform': 'https://transform.do/api',
     'JSONPath': 'https://json.path.do/api',
     'JMESPath': 'https://jmes.path.do/api',
     'Lodash': 'https://lodash.do/api',
@@ -70,6 +71,7 @@ const categories = {
     'Logging': 'https://logging.do/api',
   },
   utilities: {
+    'Utilities': 'https://utilities.do/api',
     'Decode': 'https://decode.do/api',
     'Flatten': 'https://flatten.do/api',
     'Filter': 'https://filter.do/api',
@@ -213,6 +215,7 @@ const categories = {
     'Subdomains': 'https://subdomains.do/api',
   },
   durableObjects: {
+    'Durable Objects': 'https://durable.objects.do/api',
     'Alarms': 'https://alarms.do/api',
     'Copy': 'https://copy.do/api',
     'Backup': 'https://backup.do/api',
@@ -237,6 +240,7 @@ const categories = {
     'Dynamic Function': 'https://function.do/api',
   },
   apis: {
+    'APIs': 'https://apis.do/api',
     'API Management': 'https://api.mgmt.do/api',
     'Testing': 'https://api.qa/api',
     'GraphQL': 'https://graphql.do/api',
@@ -261,6 +265,7 @@ const categories = {
     'GraphQL Schema': 'https://gql.do/api',
   },
   personas: {
+    'Personas': 'https://personas.do/api',
     'Builders': 'https://builders.do/api',
     'Employees': 'https://employees.do/api',
     'Engineers': 'https://engineers.do/api',
@@ -324,6 +329,7 @@ const categories = {
     'SWR': 'https://swr.do/api',
   },
   testing: {
+    'Testing': 'https://testing.do/api',
     'API Testing': 'https://api.qa/api',
     'API Status Page': 'https://api.status.page.as/api',
     'Performance Benchmarking': 'https://benchmark.do/api',
