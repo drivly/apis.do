@@ -65,6 +65,7 @@ const categories = {
     'Count': 'https://count.do/api',
     'Counters': 'https://counters.do/api',
     'Debug': 'https://debug.do/api',
+    'Logging': 'https://logging.do/api',
   },
   utilities: {
     'Decode': 'https://decode.do/api',
@@ -85,6 +86,10 @@ const categories = {
   },
   convert: {
     'Convert': 'https://convert.do/api',
+  },
+  search: {
+    'Searches': 'https://searches.do/api',
+    'Lookup': 'https://lookup.do/api',
   },
   crypto: {
     'Encrypt': 'https://encrypt.do/api',
@@ -107,6 +112,8 @@ const categories = {
     'Database': 'https://database.do/api',
     'Bucket': 'https://database.do/api',
     'Examples': 'https://examples.do/api',
+    'Lists': 'https://lists.do/api',
+    'Loader': 'https://loader.do/api',
   },
   cicd: {
     'Builds': 'https://builds.do/api',
@@ -159,6 +166,7 @@ const categories = {
     'Import': 'https://import.do/api',
     'Export': 'https://export.do/api',
     'Indexes': 'https://indexes.do/api',
+    'Locations': 'https://locations.do/api',
   },
   analytics: {
     'Analytics': 'https://analytics.do/api',
@@ -179,6 +187,7 @@ const categories = {
     'Testing': 'https://api.qa/api',
     'GraphQL': 'https://graphql.do/api',
     'Proxy': 'https://proxies.do/api',
+    'Rate Limit': 'https://rate.limit.do/api',
     'Webhooks': 'https://webhooks.do/api',
   },
   schema: {
@@ -195,6 +204,8 @@ const categories = {
     'Database': 'https://database.do/api',
     'GraphDL': 'https://graphdl.org/api',
     'Graph Database': 'https://graph.org/api',
+    'KeyV': 'https://keyv.org/api',
+    'KVDB': 'https://kvdb.org/api',
   },
   pipes: {
     'Pipes': 'https://pipes.do/api',
@@ -209,6 +220,10 @@ const categories = {
     'GPT-3 Templates': 'https://gpt.do/api',
     'GPT-3 Codex': 'https://codex.do/api',
   },
+  content: {
+    'Content': 'https://content.do/api',
+    'Markdown': 'https://markdown.do/api',
+  },
   code: {
     'Abstract Syntax Tree Generation': 'https://syntax.do/api',
     'Algorithm Library': 'https://algorithms.do/api',
@@ -216,6 +231,7 @@ const categories = {
     'ES6 ': 'https://es6.do/api',
     'Eval ': 'https://eval.do/api',
     'Gist ': 'https://gist.do/api',
+    'Lint ': 'https://lint.do/api',
   },
   testing: {
     'API Testing': 'https://api.qa/api',
@@ -237,6 +253,10 @@ const categories = {
     'Workers': 'https://workers.cf/api',
     'Workers for Platforms': 'https://workers.do/api',
   },
+  libraries: {
+    'Lodash': 'https://lodash.do/api',
+    'Lyra': 'https://lyra.do/api',
+  },
   integrations: {
     'Airtable Base API': 'https://base.do/api',
     'Zapier Zap Generation': 'https://zap.do/api',
@@ -252,6 +272,9 @@ const categories = {
     'Content': 'https://content.do/api',
     'Drip Sequences': 'https://drip.do/api',
     'Glyph': 'https://glyph.do/api',
+    'Landing Pages': 'https://landing.do/api',
+    'Launches': 'https://launches.do/api',
+    'Logos': 'https://logos.do/api',
     'Product Hunts': 'https://product.hunts.do/api',
   },
   commerce: {
@@ -260,6 +283,7 @@ const categories = {
     'Checkout': 'https://checkout.do/api',
     'eContract': 'https://econtract.do/api',
     'Income Verification': 'https://income.do/api',
+    'Lenders': 'https://lenders.do/api',
     'Subscriptions': 'https://subscriptions.do/api',
   },
   workflows: {
@@ -275,6 +299,7 @@ const categories = {
     'Auto Commerce APIs': 'https://driv.ly/api',
     'Dealer Service': 'https://dealers.do/api',
     'Dealer API': 'https://dealer.to/api',
+    'Listings API': 'https://listings.do/api',
     'Electric Vehicles API': 'https://evs.to/api',
   },
   startup: {
