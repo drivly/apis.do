@@ -15,16 +15,10 @@ export const api = {
   repo: 'https://github.com/drivly/apis.do',
 }
 
-const apis = {
-  apis: {
+const categories = {
+  core: {
     'APIs': 'https://apis.do/api',
-    'API Context': 'https://ctx.do/api',
-    'API Directory': 'https://apis.directory/api',
-    'API Management': 'https://api.mgmt.do/api',
-    'API Testing': 'https://api.qa/api',
-    'GraphQL': 'https://graphql.do/api',
-    'Proxy': 'https://proxies.do/api',
-    'Webhooks': 'https://webhooks.do/api',
+    'Context': 'https://ctx.do/api',
   },
   primitives: {
     'APIs': 'https://apis.do/api',
@@ -180,6 +174,13 @@ const apis = {
     'Functions': 'https://functions.do/api',
     'Dynamic Function': 'https://function.do/api',
   },
+  api: {
+    'API Management': 'https://api.mgmt.do/api',
+    'Testing': 'https://api.qa/api',
+    'GraphQL': 'https://graphql.do/api',
+    'Proxy': 'https://proxies.do/api',
+    'Webhooks': 'https://webhooks.do/api',
+  },
   schema: {
     'Schema Generation': 'https://schema.do/api',
     'GraphQL Schema': 'https://gql.do/api',
@@ -300,7 +301,8 @@ const apis = {
 export default {
   fetch: async (req, env) => {
     const { user, origin, requestId, method, body, time, pathSegments, query } = await env.CTX.fetch(req).then(res => res.json())
-    
+    const [ category ] = pathSegments
+    const apis = categories[category] ?? categories
     return new Response(JSON.stringify({ api, apis, user }, null, 2), { headers: { 'content-type': 'application/json; charset=utf-8' }})
   }
 }
