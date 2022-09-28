@@ -263,6 +263,7 @@
       "Checkout": "https://checkout.do/api",
       "eContract": "https://econtract.do/api",
       "Income Verification": "https://income.do/api",
+      "Lenders": "https://lenders.do/api",
       "Subscriptions": "https://subscriptions.do/api"
     },
     "workflows": {
