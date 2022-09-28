@@ -36,6 +36,7 @@ const categories = {
     'Count': 'https://count.do/api',
     'Services': 'https://services.do/api',
     'SDK': 'https://sdk.do/api',
+    'Values': 'https://values.do/api',
   },
   saas: {
     'Analytics': 'https://analytics.do/api',
@@ -55,6 +56,8 @@ const categories = {
     'Identity': 'https://identity.do/api',
     'JWT Tokens': 'https://jwt.do/api',
     'OAuth 2.0': 'https://oauth.do/api',
+    'Vault': 'https://vault.do/api',
+    'Vaults': 'https://vaults.do/api',
   },
   transformation: {
     'Transform': 'https://transform.do/api',
@@ -65,10 +68,13 @@ const categories = {
     'XPath': 'https://x.path.do/api',
   },
   tools: {
+    'ASCII': 'https://ascii.do/api',
     'Count': 'https://count.do/api',
     'Counters': 'https://counters.do/api',
     'Debug': 'https://debug.do/api',
     'Logging': 'https://logging.do/api',
+    'Unicode': 'https://unicode.do/api',
+    'UUID': 'https://uuid.do/api',
   },
   utilities: {
     'Utilities': 'https://utilities.do/api',
@@ -242,14 +248,17 @@ const categories = {
   apis: {
     'APIs': 'https://apis.do/api',
     'API Management': 'https://api.mgmt.do/api',
-    'Testing': 'https://api.qa/api',
+    'CRUD': 'https://crud.do/api',
     'GraphQL': 'https://graphql.do/api',
     'Mashup': 'https://mashup.do/api',
     'Middleware': 'https://middleware.do/api',
     'Monetize': 'https://monetize.do/api',
     'Proxy': 'https://proxies.do/api',
     'Rate Limit': 'https://rate.limit.do/api',
+    'Testing': 'https://api.qa/api',
+    'Webhook': 'https://webhook.do/api',
     'Webhooks': 'https://webhooks.do/api',
+    'Websockets': 'https://websockets.do/api',
   },
   crawling: {
     'Crawl API': 'https://crawl.do/api',
@@ -308,8 +317,8 @@ const categories = {
   },
   code: {
     'Abstract Syntax Tree': 'https://syntax.do/api',
-    'Algorithm Library': 'https://algorithms.do/api',
-    'ESBuild Transpilation': 'https://esbuild.do/api',
+    'Algorithms': 'https://algorithms.do/api',
+    'ESBuild': 'https://esbuild.do/api',
     'ES6 ': 'https://es6.do/api',
     'Eval ': 'https://eval.do/api',
     'Gist ': 'https://gist.do/api',
@@ -327,6 +336,7 @@ const categories = {
     'Syntax': 'https://syntax.do/api',
     'SDK': 'https://sdk.do/api',
     'SWR': 'https://swr.do/api',
+    'Versions': 'https://versions.do/api',
   },
   testing: {
     'Testing': 'https://testing.do/api',
@@ -367,6 +377,7 @@ const categories = {
   },
   marketing: {
     'API Landing Pages': 'https://api.page/api',
+    'Backlinks': 'https://backlinks.do/api',
     'Blogs': 'https://blogs.do/api',
     'Chat Boxes': 'https://chat.boxes.do/api',
     'Content': 'https://content.do/api',
@@ -377,6 +388,7 @@ const categories = {
     'Logos': 'https://logos.do/api',
     'Pricing': 'https://pricing.do/api',
     'Product Hunts': 'https://product.hunts.do/api',
+    'Waitlist': 'https://waitlist.do/api',
   },
   commerce: {
     'ACH Transfers': 'https://ach.do/api',
@@ -392,13 +404,18 @@ const categories = {
     'Services': 'https://services.do/api',
     'Subscriptions': 'https://subscriptions.do/api',
   },
+  services: {
+    'Concierge': 'https://concierge.do/api',
+    'Mechanical Turks': 'https://mechanical.turks.do/api',
+  },
   workflows: {
     'Workflows': 'https://workflows.do/api',
     'Approvals': 'https://approvals.do/api',
     'Concierge': 'https://concierge.do/api',
     'Notary': 'https://notary.do/api',
   },
-  apps: {
+  applications: {
+    'Applications': 'https://applications.do/api',
     'CRMs': 'https://crms.do/api',
     'Concierge': 'https://concierge.do/api',
   },
@@ -410,6 +427,8 @@ const categories = {
     'Listings API': 'https://listings.do/api',
     'Electric Vehicles API': 'https://evs.do/api',
     'Transport API': 'https://transport.do/api',
+    'Vehicles': 'https://vehicles.do/api',
+    'VINs': 'https://vins.do/api',
   },
   startup: {
     'Startups': 'https://startups.do/api',
@@ -445,6 +464,8 @@ const categories = {
   fun: {
     '🚀 Emojis': 'https://emojis.do/api',
     '✅ Streaks': 'https://streaks.do/api',
+    '🏔 Success': 'https://success.do/api',
+    '📖 Words': 'https://words.do/api',
   },
   opportunities: {
     'Careers': 'https://career.do/api',
