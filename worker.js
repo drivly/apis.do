@@ -314,6 +314,7 @@ const categories = {
     'Content': 'https://content.do/api',
     'Markdown': 'https://markdown.do/api',
     'MDX': 'https://mdx.do/api',
+    'Wikis': 'https://wikis.do/api',
   },
   code: {
     'Abstract Syntax Tree': 'https://syntax.do/api',
