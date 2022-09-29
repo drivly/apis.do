@@ -1,4 +1,4 @@
-import { apis } from './apis'
+import apis from './apis'
 
 export const api = {
   icon: '🚀',
