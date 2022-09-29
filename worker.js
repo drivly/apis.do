@@ -3,7 +3,7 @@ export const api = {
   name: 'apis.do',
   description: 'Hypermedia-driven API Directory',
   url: 'https://apis.do/api',
-  type: 'https://apis.do/api',
+  type: 'https://apis.do/core',
   endpoints: {
     listCategories: 'https://apis.do/api',
     getCategory: 'https://apis.do/:type',
