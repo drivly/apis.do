@@ -38,9 +38,9 @@ export const api = func => ({
   }
 })
 
-export const categories = Object.values(apis).reduce((acc, item) => {
+export const categories = Object.entries(apis).reduce((acc, [name,item]) => {
   acc[item.type] = acc[item.type] || []
-  acc[item.type].push(item)
+  acc[item.type].push({name,...item})
 }, {})
 
 export const apis = {
