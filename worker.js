@@ -1,4 +1,4 @@
-// import { apis, err, fetchJSON, json } from './index'
+import { apis } from './index'
 
 export const api = {
   icon: '🚀',
