@@ -1,4 +1,4 @@
-import { getAPI, categories, apis, err, fetchJSON, json } from './index'
+import { getAPI, apis, err, fetchJSON, json } from './index'
 
 // export const api = {
 //   icon: '🚀',
@@ -481,7 +481,6 @@ import { getAPI, categories, apis, err, fetchJSON, json } from './index'
 export default {
   fetch: async (req, env) => {
     const api = getAPI(req)
-    const areas = getCategories
     const { user, origin, requestId, method, body, time, pathSegments, query } = await env.CTX.fetch(req).then(res => res.json())
     const [ category ] = pathSegments
 //     const apis = categories[category] ?? categories
