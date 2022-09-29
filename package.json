@@ -1,0 +1,17 @@
+{
+  "name": "apis.do",
+  "version": "0.1.0",
+  "description": "Hypermedia API Framework & Directory",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drivly/apis.do.git"
+  },
+  "author": "Nathan Clevenger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drivly/apis.do/issues"
+  },
+  "homepage": "https://github.com/drivly/apis.do#readme"
+}
