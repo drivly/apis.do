@@ -1,4 +1,4 @@
-export const apis = {
+export default {
   'apis.do': {
     icon: '🚀',
     type: 'core',
