@@ -7,7 +7,8 @@ export const api = {
   url: 'https://apis.do/api',
   type: 'https://apis.do/core',
   endpoints: {
-    listCategories: 'https://apis.do/api',
+    listAllAPIs: 'https://apis.do/apis',
+    listCategories: 'https://apis.do/categories',
     getCategory: 'https://apis.do/:type',
     search: 'https://apis.do/search/:term',
   },
