@@ -3,9 +3,9 @@ export const getAPI = (req, opts) => {
   const domain = opts?.api ?? hostname.split('.').slice(-2).join('.')
   const knownAPI = apis[domain]
   const endpoints = Object.fromEntries(Object.entries(knownAPI?.endpoints)
-                      .map(([name, endpoint]) => ([name, origin + endpoint])))
+                      .map(([name, endpoint]) => ([name, endpoint.startsWith('https://') ? endpoint : origin + endpoint])))
   const examples = Object.fromEntries(Object.entries(knownAPI?.endpoints)
-                      .map(([name, endpoint]) => ([name, origin + endpoint])))
+                      .map(([name, endpoint]) => ([name, endpoint.startsWith('https://') ? endpoint : origin + endpoint])))
   const gettingStarted = knownAPI?.gettingStarted ?? [
     `If you don't already have a JSON Viewer Browser Extension, get that first:`,
     `https://extensions.do`,
@@ -58,6 +58,21 @@ export const apis = {
       searchForData: '/search/data',
     },
   },
+  'gist.do': {
+    icon: '⚡️',
+    type: 'code',
+    description: 'Abstract Syntax Tree Parser',
+    endpoints: {
+      deployWorker: '/:gist',
+      invokeWorker: 'https://gist.gist.do',
+    },
+    examples: {
+      publish: 'https://gist.do/28a6b4bfde485b704a2fcc9b6c874e79',
+      invokeWorker: 'https://28a6b4bfde485b704a2fcc9b6c874e79.gist.do',
+      publishAPI: 'https://gist.do/api/nathanclevenger/28a6b4bfde485b704a2fcc9b6c874e79',
+      publishWorker: 'https://gist.do/worker/nathanclevenger/28a6b4bfde485b704a2fcc9b6c874e79',
+    }
+  },
   'pkg.do': {
     icon: '📦',
     type: 'code',
@@ -69,6 +84,19 @@ export const apis = {
       getAPIs: '/apis.do',
       getLodash: '/lodash-es',
       getVersion: '/lodash-es@4.17.21',
+    },
+  },
+  'syntax.do': {
+    icon: '⚡️',
+    type: 'code',
+    description: 'Abstract Syntax Tree Parser',
+    endpoints: {
+      parseScript: '/:code',
+      parseModule: '/:url',
+    },
+    examples: {
+      parseScript: 'https://syntax.do/x=x+3',
+      parseGist: 'https://syntax.do/gist.githubusercontent.com/nathanclevenger/05c566c2452de53caa20a32cd12fbbca/raw/203017cdae58f14d72a242627a1e10e986444a2f/index.js',
     },
   },
 }
