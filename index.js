@@ -1,4 +1,4 @@
-import apis from './apis'
+export apis from './apis'
 
 export const getAPI = (req, opts) => {
   const { origin, hostname, pathname } = new URL(req.url)
