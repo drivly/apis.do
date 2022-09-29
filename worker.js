@@ -1,22 +1,22 @@
-import { getAPI, apis, err, fetchJSON, json } from './index'
+import { apis, err, fetchJSON, json } from './index'
 
-// export const api = {
-//   icon: '🚀',
-//   name: 'apis.do',
-//   description: 'Hypermedia-driven API Directory',
-//   url: 'https://apis.do/api',
-//   type: 'https://apis.do/core',
-//   endpoints: {
-//     listCategories: 'https://apis.do/api',
-//     getCategory: 'https://apis.do/:type',
-//     search: 'https://apis.do/search/:term',
-//   },
-//   site: 'https://apis.do',
-//   login: 'https://apis.do/login',
-//   signup: 'https://apis.do/signup',
-//   subscribe: 'https://apis.do/subscribe',
-//   repo: 'https://github.com/drivly/apis.do',
-// }
+export const api = {
+  icon: '🚀',
+  name: 'apis.do',
+  description: 'Hypermedia-driven API Directory',
+  url: 'https://apis.do/api',
+  type: 'https://apis.do/core',
+  endpoints: {
+    listCategories: 'https://apis.do/api',
+    getCategory: 'https://apis.do/:type',
+    search: 'https://apis.do/search/:term',
+  },
+  site: 'https://apis.do',
+  login: 'https://apis.do/login',
+  signup: 'https://apis.do/signup',
+  subscribe: 'https://apis.do/subscribe',
+  repo: 'https://github.com/drivly/apis.do',
+}
 
 // const categories = {
 //   core: {
@@ -480,7 +480,7 @@ import { getAPI, apis, err, fetchJSON, json } from './index'
 
 export default {
   fetch: async (req, env) => {
-    const api = getAPI(req)
+//     const api = getAPI(req)
     const { user, origin, requestId, method, body, time, pathSegments, query } = await env.CTX.fetch(req).then(res => res.json())
     const [ category ] = pathSegments
 //     const apis = categories[category] ?? categories
