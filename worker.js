@@ -1,4 +1,4 @@
-import { apis } from './index'
+import { apis } from './apis'
 
 export const api = {
   icon: '🚀',
