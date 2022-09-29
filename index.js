@@ -28,7 +28,7 @@ export const getAPI = (req, opts) => {
 
 export const fetchJSON = (...args) => fetch(...args).then(res => res.json()).catch(({name,message}) => ({ error: {name,message}}))
 export const json = data  => new Response(JSON.stringify({user, redirect, body, data}, null, 2), { headers: { 'content-type': 'application/json; charset=utf-8' }})
-export const err = ({name,message,stack}) => ({name,message,stack})
+export const err = ({name,message,stack}) => ({ error: {name,message,stack}})
 
 export const api = func => ({
   fetch: async (req, env) => {
