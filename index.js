@@ -58,8 +58,21 @@ export const apis = {
       searchForData: '/search/data',
     },
   },
-  'gist.do': {
+  'esbuild.do': {
     icon: '⚡️',
+    type: 'code',
+    description: 'ESBuild as a Service',
+    endpoints: {
+      build: '/:url',
+    },
+    examples: {
+      buildPackage: 'https://esbuild.do/pkg.do/lodash',
+      buildGeneratedWorker: 'https://esbuild.do/worker.do/cube/x=5/x^3',
+      buildGist: 'https://gist.githubusercontent.com/nathanclevenger/05c566c2452de53caa20a32cd12fbbca/raw/0c8ef49c00d3614b04c1228f279c556c96ef14b8/index.js',
+    }
+  },
+  'gist.do': {
+    icon: '🛠',
     type: 'code',
     description: 'Abstract Syntax Tree Parser',
     endpoints: {
@@ -97,6 +110,19 @@ export const apis = {
     examples: {
       parseScript: 'https://syntax.do/x=x+3',
       parseGist: 'https://syntax.do/gist.githubusercontent.com/nathanclevenger/05c566c2452de53caa20a32cd12fbbca/raw/203017cdae58f14d72a242627a1e10e986444a2f/index.js',
+    },
+  },
+  'worker.do': {
+    icon: '👌',
+    type: 'code',
+    description: 'Generate Worker from any JavaScriptFunction',
+    endpoints: {
+      buildCode: '/:name/:args/:code',
+      buildFile: '/:name/:args/:url',
+    },
+    examples: {
+      workerFromScript: 'https://worker.do/cube/number=5/5^3',
+      workerFromGist: 'https://worker.do/math/number=5/gist.githubusercontent.com/nathanclevenger/05c566c2452de53caa20a32cd12fbbca/raw/203017cdae58f14d72a242627a1e10e986444a2f/index.js',
     },
   },
 }
