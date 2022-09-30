@@ -438,8 +438,7 @@ Then you interactively use the API at: <https://apis.do/api>
   - [Project Gigs:  ](https://gigs.do/api)
 
 
-# [Drivly Open](https://driv.ly/open)
-## Accelerating Innovation through Open Source
+## [Drivly Open](https://driv.ly/open) – Accelerating Innovation through Open Source
 
 Our [Drivly Open Philosophy](https://philosophy.do) has these key principles:
 
