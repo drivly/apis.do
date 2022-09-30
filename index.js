@@ -1,6 +1,8 @@
 // export * as apis from './apis'
 
-export const apis = {
+export default { apis, json, api, categories, Router, fetchJSON, getAPI }
+
+const apis = {
   'apis.do': {
     icon: '🚀',
     type: 'core',
@@ -84,7 +86,7 @@ export const apis = {
   },
 }
 
-export const getAPI = (req, opts) => {
+const getAPI = (req, opts) => {
   const { origin, hostname, pathname } = new URL(req.url)
   const domain = opts?.api ?? hostname.split('.').slice(-2).join('.')
   const knownAPI = apis[domain]
@@ -112,11 +114,11 @@ export const getAPI = (req, opts) => {
   return { api, gettingStarted, examples }
 }
 
-export const fetchJSON = (...args) => fetch(...args).then(res => res.json()).catch(({name,message}) => ({ error: {name,message}}))
-export const json = data  => new Response(JSON.stringify(data, null, 2), { headers: { 'content-type': 'application/json; charset=utf-8' }})
-export const err = ({name,message,stack}) => ({ error: {name,message,stack}})
+const fetchJSON = (...args) => fetch(...args).then(res => res.json()).catch(({name,message}) => ({ error: {name,message}}))
+const json = data  => new Response(JSON.stringify(data, null, 2), { headers: { 'content-type': 'application/json; charset=utf-8' }})
+const err = ({name,message,stack}) => ({ error: {name,message,stack}})
 
-export const api = func => ({
+const api = func => ({
   fetch: async (req, env) => {
     let api = getAPI(req)
     let result = await func(req).catch(err)
@@ -124,14 +126,14 @@ export const api = func => ({
   }
 })
 
-export const categories = Object.entries(apis).reduce((acc, [name,item]) => {
+const categories = Object.entries(apis).reduce((acc, [name,item]) => {
   acc[item.type] = acc[item.type] || []
   acc[item.type].push({name,...item})
 }, {})
 
 // https://github.com/kwhitley/itty-router-extras
 
-export const Router = (options = {}) => {
+const Router = (options = {}) => {
   const { stack = false } = options
 
   return new Proxy(BaseRouter(options), {
