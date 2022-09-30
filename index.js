@@ -1,8 +1,6 @@
 // export * as apis from './apis'
 
-export default { apis, json, api, categories, Router, fetchJSON, getAPI }
-
-const apis = {
+export const apis = {
   'apis.do': {
     icon: '🚀',
     type: 'core',
@@ -86,7 +84,7 @@ const apis = {
   },
 }
 
-const getAPI = (req, opts) => {
+export const getAPI = (req, opts) => {
   const { origin, hostname, pathname } = new URL(req.url)
   const domain = opts?.api ?? hostname.split('.').slice(-2).join('.')
   const knownAPI = apis[domain]
@@ -114,11 +112,11 @@ const getAPI = (req, opts) => {
   return { api, gettingStarted, examples }
 }
 
-const fetchJSON = (...args) => fetch(...args).then(res => res.json()).catch(({name,message}) => ({ error: {name,message}}))
-const json = data  => new Response(JSON.stringify(data, null, 2), { headers: { 'content-type': 'application/json; charset=utf-8' }})
-const err = ({name,message,stack}) => ({ error: {name,message,stack}})
+export const fetchJSON = (...args) => fetch(...args).then(res => res.json()).catch(({name,message}) => ({ error: {name,message}}))
+export const json = data  => new Response(JSON.stringify(data, null, 2), { headers: { 'content-type': 'application/json; charset=utf-8' }})
+export const err = ({name,message,stack}) => ({ error: {name,message,stack}})
 
-const api = func => ({
+export const api = func => ({
   fetch: async (req, env) => {
     let api = getAPI(req)
     let result = await func(req).catch(err)
@@ -126,14 +124,14 @@ const api = func => ({
   }
 })
 
-const categories = Object.entries(apis).reduce((acc, [name,item]) => {
+export const categories = Object.entries(apis).reduce((acc, [name,item]) => {
   acc[item.type] = acc[item.type] || []
   acc[item.type].push({name,...item})
 }, {})
 
 // https://github.com/kwhitley/itty-router-extras
 
-const Router = (options = {}) => {
+export const Router = (options = {}) => {
   const { stack = false } = options
 
   return new Proxy(BaseRouter(options), {
@@ -185,3 +183,6 @@ function BaseRouter({ base = '', routes = [] } = {}) {
     }
   }
 }
+
+
+// export default { apis, json, api, err, categories, Router, fetchJSON, getAPI }
