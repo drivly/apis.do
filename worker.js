@@ -1,4 +1,4 @@
-import { getAPI, apis } from './index' 
+import { getAPI } from './index' 
 
 // import apis from './apis'
 
