@@ -1,6 +1,6 @@
 {
   "name": "apis.do",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Hypermedia API Framework & Directory",
   "main": "index.js",
   "type": "module",
@@ -13,5 +13,5 @@
   "bugs": {
     "url": "https://github.com/drivly/apis.do/issues"
   },
-  "homepage": "https://github.com/drivly/apis.do#readme"
+  "homepage": "https://apis.do"
 }
