@@ -1,6 +1,6 @@
 {
   "name": "apis.do",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Hypermedia API Framework & Directory",
   "main": "dist/index.js",
   "type": "module",
