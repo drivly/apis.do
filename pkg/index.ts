@@ -1,3 +1,5 @@
+export const json = (data: any)  => new Response(JSON.stringify(data, null, 2), { headers: { 'content-type': 'application/json; charset=utf-8' }})
+export const err = ({name,message,stack}: Error) => ({ error: {name,message,stack}})
 
 export type API = {
     name: string
