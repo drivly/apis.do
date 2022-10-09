@@ -358,17 +358,17 @@ Then you interactively use the API at: <https://apis.do/api>
     - [Workers:  ](https://workers.cf/api)
     - [Workers for Platforms:  ](https://workers.do/api)
   libraries:
-  - [Lodash:  ](https://lodash.do/api)
+    - [Lodash:  ](https://lodash.do/api)
     - [Lyra:  ](https://lyra.do/api)
   integrations:
-  - [Airtable Base API:  ](https://base.do/api)
+    - [Airtable Base API:  ](https://base.do/api)
     - [Zapier Zap Generation:  ](https://zap.do/api)
   assets:
-  - [Icons:  ](https://icons.do/api)
+    - [Icons:  ](https://icons.do/api)
     - [Images:  ](https://images.do/api)
     - [Open Graph:  ](https://ogimage.do/api)
   marketing:
-  - [API Landing Pages:  ](https://api).page/api)
+    - [API Landing Pages:  ](https://api).page/api)
     - [Blogs:  ](https://blogs.do/api)
     - [Chat Boxes:  ](https://chat.boxes.do/api)
     - [Content:  ](https://content.do/api)
@@ -379,7 +379,7 @@ Then you interactively use the API at: <https://apis.do/api>
     - [Logos:  ](https://logos.do/api)
     - [Product Hunts:  ](https://product.hunts.do/api)
   commerce:
-  - [ACH Transfers:  ](https://ach.do/api)
+    - [ACH Transfers:  ](https://ach.do/api)
     - [Bill of Sale:  ](https://bos.do/api)
     - [Checkout:  ](https://checkout.do/api)
     - [eContract:  ](https://econtract.do/api)
@@ -390,28 +390,28 @@ Then you interactively use the API at: <https://apis.do/api>
     - [Payments:  ](https://payments.do/api)
     - [Subscriptions:  ](https://subscriptions.do/api)
   workflows:
-  - [Workflows:  ](https://workflows.do/api)
+    - [Workflows:  ](https://workflows.do/api)
     - [Concierge:  ](https://concierge.do/api)
     - [Notary:  ](https://notary.do/api)
   apps:
-  - [CRMs:  ](https://crms.do/api)
+    - [CRMs:  ](https://crms.do/api)
     - [Concierge:  ](https://concierge.do/api)
   automotive:
-  - [Automotive Data:  ](https://auto.dev/api)
+    - [Automotive Data:  ](https://auto.dev/api)
     - [Auto Commerce APIs:  ](https://driv.ly/api)
     - [Dealer Service:  ](https://dealers.do/api)
     - [Dealer API:  ](https://dealer.to/api)
     - [Listings API:  ](https://listings.do/api)
     - [Electric Vehicles API:  ](https://evs.to/api)
   startup:
-  - [Experiment:  ](https://experiment.do/api)
+    - [Experiment:  ](https://experiment.do/api)
     - [Goals:  ](https://goals.do/api)
     - [Hiring:  ](https://hiring.do/api)
     - [Ideate:  ](https://ideate.do/api)
     - [Mission:  ](https://mission.do/api)
     - [Objectives & Key Results:  ](https://okr.do/api)
   tbd:
-  - [Directory:  ](https://directory.do/api)
+    - [Directory:  ](https://directory.do/api)
     - [Encrypted:  ](https://encrypted.do/api)
     - [Path:  ](https://path.do/api)
     
