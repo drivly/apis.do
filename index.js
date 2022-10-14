@@ -6,13 +6,13 @@ export const apis = {
     type: 'core',
     description: 'Hypermedia-driven API Directory',
     endpoints: {
-      listCategories: '/api',
-      getCategory: '/:type',
-      search: '/search/:term',
+      'List Categories': '/api',
+      'Get Category': '/:type',
+      'Search APIs': '/search/:term',
     },
     examples: {
-      getUtilities: '/utilities',
-      searchForData: '/search/data',
+      'Get Utilities': '/utilities',
+      'Search for Data': '/search/data',
     },
   },
   'esbuild.do': {
