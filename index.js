@@ -20,12 +20,14 @@ export const apis = {
     type: 'code',
     description: 'ESBuild as a Service',
     endpoints: {
-      build: '/:url',
+      'Build from URL': '/:url',
+      'Build from POST': 'POST /builds',
+      'List Previous Builds': '/builds',
     },
     examples: {
-      buildPackage: 'https://esbuild.do/pkg.do/lodash',
-      buildGeneratedWorker: 'https://esbuild.do/worker.do/cube/x=5/x^3',
-      buildGist: 'https://gist.githubusercontent.com/nathanclevenger/05c566c2452de53caa20a32cd12fbbca/raw/0c8ef49c00d3614b04c1228f279c556c96ef14b8/index.js',
+      'Build Package': 'https://esbuild.do/pkg.do/lodash',
+      'Build Generated Worker': 'https://esbuild.do/worker.do/cube/x=5/x^3',
+      'Build Gist': 'https://gist.githubusercontent.com/nathanclevenger/05c566c2452de53caa20a32cd12fbbca/raw/0c8ef49c00d3614b04c1228f279c556c96ef14b8/index.js',
     }
   },
   'gist.do': {
