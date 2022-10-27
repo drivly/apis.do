@@ -432,7 +432,7 @@ Then you interactively use the API at: <https://apis.do/api>
   - [🚀 Emojis:  ](https://emojis.do/api)
   
 ### Opportunities:
-  - [Careers:  ](https://career.do/api)
+  - [Careers:  ](https://careers.do/api)
   - [Internships:  ](https://internships.do/api)
   - [Open Source Sponsorships:  ](https://sponsors.do/api)
   - [Project Gigs:  ](https://gigs.do/api)
