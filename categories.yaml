@@ -307,18 +307,21 @@ automotive:
   Dealer API: https://dealer.to/api
   Listings API: https://listings.do/api
   Electric Vehicles API: https://evs.to/api
-startup:
+  
+Startup:
   Experiment: https://experiment.do/api
   Goals: https://goals.do/api
   Hiring: https://hiring.do/api
   Ideate: https://ideate.do/api
   Mission: https://mission.do/api
   Objectives & Key Results: https://okr.do/api
-tbd:
+  
+TBD:
   Directory: https://directory.do/api
   Encrypted: https://encrypted.do/api
   Path: https://path.do/api
-glyph:
+  
+Glyph:
   入: Function
   凵: Schema
   口: Resource
@@ -334,8 +337,8 @@ glyph:
 Fun:
   🚀 Emojis: https://emojis.do/api
   
-opportunities:
-  Careers: https://career.do/api
-  Internships: https://internships.do/api
-  Open Source Sponsorships: https://sponsors.do/api
-  Project Gigs: https://gigs.do/api
+Opportunities:
+  Careers.do: Drivly Open Careers
+  Internships.do: Drivly Open Internships
+  Sponsors.do: Drivly Open Sponsorships
+  Gigs: Drivly Open Project Gigs
