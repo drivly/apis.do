@@ -109,14 +109,14 @@ state:
   State.Machines.do: State Machine API
   
 PubSub:
-  PubSub: https://pubsub.do/api
-  Triggers: https://triggers.do/api
+  PubSub.do: PubSub Publisher & Subscriber APIs
   
 IoT:
-  MQTT: https://mqtt.do/api
+  MQTT.do: https://mqtt.do/api
   
 Data:
   Database.do: https://database.do/api
+  KVDB.do: KeyValue-based Database 
   Bucket.do: https://database.do/api
   Examples.do: https://examples.do/api
   Lists.do: https://lists.do/api
@@ -221,6 +221,7 @@ Databases:
   NoSQL: https://nosql.do/api
   SQLite: https://sqlite.do/api
   
+  
 Pipes:
   Pipes: https://pipes.do/api
   Chains: https://chains.do/api
@@ -287,16 +288,16 @@ Assets:
   Open Graph: https://ogimage.do/api
   
 Marketing:
-  API Landing Pages: https://api.page/api
-  Blogs: https://blogs.do/api
-  Chat Boxes: https://chat.boxes.do/api
-  Content: https://content.do/api
-  Drip Sequences: https://drip.do/api
-  Glyph: https://glyph.do/api
-  Landing Pages: https://landing.do/api
-  Launches: https://launches.do/api
-  Logos: https://logos.do/api
-  Product Hunts: https://product.hunts.do/api
+  API.Page: API Landing Pages
+  Blogs.do: Blog API & SDK
+  Chat.Boxes.do: Chat Box API & SDK
+  Content.do: Content Generation & Management API
+  Drip.do: Drip Email Sequence Management & Execution
+  Close.do: Deal Close Automation APIs
+  Landing.do: Landing Pages Generation & Management
+  Launches.do: Product Launch Automation API
+  Logos.do: Logo Generation API
+  Product.Hunts.do: Product Hunt Automation API
   
 Commerce:
   ACH Transfers: https://ach.do/api
@@ -341,6 +342,8 @@ TBD:
   Encrypted: https://encrypted.do/api
   Path: https://path.do/api
   
+  
+  Glyph.do: https://glyph.do/api
 Glyph:
   入: Function
   凵: Schema
