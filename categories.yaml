@@ -64,6 +64,8 @@ Formats:
   Markdown.do: Markdown Generation & Transformation API
   ES6.do: ES6 Javascript Generation & Transformation API
   Typescript.do: Typescript Generation & Transformation API
+  GIF.do: PNG Generation & Transformation API
+  MP4.do: MPEG4 Generation & Transformation API
   PNG.do: PNG Generation & Transformation API
   SVG.do: SVG Generation & Transformation API
   XML.do: XML Conversion & Transformation API
