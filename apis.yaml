@@ -338,6 +338,8 @@ Startup:
   Goals.do: https://goals.do/api
   Hiring.do: https://hiring.do/api
   Ideate.do: https://ideate.do/api
+  ID8.do: Ideate
+  IdeaFlow.do: Idea Flow Management xAPI
   Mission: https://mission.do/api
   Objectives & Key Results: https://okr.do/api
   
