@@ -1,6 +1,6 @@
 Core:
-  APIs.do: Hypermedia-driven APIs
-  CTX.do: Context Enrichment API
+  APIs.do: Hypermedia-driven APIs & SDK
+  CTX.do: Context Enrichment API & SDK
   
 Primitives:
   Triggers.do: API Triggers
