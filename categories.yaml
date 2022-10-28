@@ -46,18 +46,19 @@ Tools:
   Logging: https://logging.do/api
   
 Utilities:
-  Decode: https://decode.do/api
-  Flatten: https://flatten.do/api
-  Filter: https://filter.do/api
-  Iterate: https://iterate.do/api
-  camelCaseKeys: https://camel.case.do/api
-  dot.case.keys: https://dot.case.do/api
-  Human Case Keys: https://human.case.do/api
-  kebab-case-keys: https://kebab.case.do/api
-  snake_case_keys: https://snake.case.do/api
-  SCREAMING_SNAKE_CASE_KEYS: https://screaming.snake.case.do/api
-  TitleCaseKeys: https://title.case.do/api
-  Sentence case keys: https://sentence.case.do/api
+  Decode.do: Base64 Decode API
+  Encode.do: Base64 Encode API
+  Flatten.do: JSON Flattening API
+  Filter.do: Data Filter API
+  Iterate.do: Iteration API
+  camel.case.do: camelCaseKeys Transformation API
+  dot.case.do: dot.case.keys Transformation API
+  human.case.do: Human Case Keys Transformation API
+  kebab.case.do: kebab-case-keys Transformation API
+  snake.case.do: snake_case_keys Transformation API
+  screaming.snake.case.do: SCREAMING_SNAKE_CASE_KEYS Transformation API
+  title.case.do: TitleCaseKeys Transformation API
+  sentence.case.do: Sentence case keys Transformation API
   
 Formats:
   CSV.do: CSV Generation & Transformation API
