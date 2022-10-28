@@ -40,10 +40,10 @@ Transformation:
   X.Path.do: XPath API
   
 Tools:
-  Count: https://count.do/api
-  Counters: https://counters.do/api
-  Debug: https://debug.do/api
-  Logging: https://logging.do/api
+  Count.do: Count API
+  Counters.do: Counters API & SDK
+  Debug.do: Debug API
+  Logging.do: Logging API
   
 Utilities:
   Decode.do: Base64 Decode API
@@ -95,8 +95,8 @@ Convert:
   YAML to JSON: https://yaml.do/api
   
 Search:
-  Searches: https://searches.do/api
-  Lookup: https://lookup.do/api
+  Searches.do: https://searches.do/api
+  Lookup.do: https://lookup.do/api
   
 Crypto:
   Encrypt.do: Encryption API
@@ -189,51 +189,52 @@ Communication:
   Slack.do: https://slack.do/api
   
 Functions:
-  Functions: https://functions.do/api
-  Dynamic Function: https://function.do/api
+  Functions.do: Dynamic Edge Functions
   
 APIs:
-  API Management: https://api.mgmt.do/api
-  Testing: https://api.qa/api
-  GraphQL: https://graphql.do/api
-  Mashup: https://mashup.do/api
-  Middleware: https://middleware.do/api
-  Monetize: https://monetize.do/api
-  Proxy: https://proxies.do/api
-  Rate Limit: https://rate.limit.do/api
-  Webhooks: https://webhooks.do/api
+  APIs.do: Hypermedia APIs & SDK
+  API.QA: Dynamic API Test Automation
+  GraphQL.do: Dynamic GraphQL APIs & SDK
+  Mashup.do: API Mashup API & SDK
+  Middleware.do: API Middleware APIs & SDK
+  Monetize.do: API Monetization APIs & SDK
+  Proxies.do: API Proxies & Proxy SDK
+  Rate.Limit.do: API Rate Limiting APIs & SDK
+  Webhooks.do: Capture & Send Webhooks API & SDK
   
 Schema:
-  Schema Generation: https://schema.do/api
-  GraphQL Schema: https://gql.do/api
+  Schema.do: Schema Generation API
+  GQL.do: GraphQL Schema Generation & Validation API
   
 Personas:
-  Builders: https://builders.do/api
-  Employees: https://employees.do/api
-  Engineers: https://engineers.do/api
-  Humans: https://humans.do/api
+  Builders.do: https://builders.do/api
+  Employees.do: https://employees.do/api
+  Engineers.do: https://engineers.do/api
+  Humans.do: https://humans.do/api
   
 Databases:
-  Database: https://database.do/api
-  GraphDL: https://graphdl.org/api
-  Graph Database: https://graph.do/api
-  KeyV: https://keyv.do/api
-  KVDB: https://kvdb.do/api
-  NoSQL: https://nosql.do/api
-  SQLite: https://sqlite.do/api
+  Database.do: Global Edge Databases
+  GraphDL.do: GraphDL Graph Definition Language API & SDK
+  Graph.do: Global Edge Graph Database
+  KeyV: Key Value API
+  KVDB: KeyValue-based Database API
+  NoSQL: NoSQL Database API & SDK
+  SQLite: Edge SQLite Database API & SDK
   
   
 Pipes:
-  Pipes: https://pipes.do/api
-  Chains: https://chains.do/api
-  Commands: https://commands.do/api
-  Compose: https://compose.do/api
-  Console: https://console.do/api
-  Grep: https://grep.do/api
+  Pipes.do: https://pipes.do/api
+  Chains.do: https://chains.do/api
+  Commands.do: https://commands.do/api
+  Compose.do: https://compose.do/api
+  Console.do: https://console.do/api
+  Grep.do: https://grep.do/api
+  Uniq.do:
+  Sort.do:
   
 AI:
-  Artificial Intelligences: https://ais.do/api
-  GPT-3 Templates: https://gpt.do/api
+  AIs.do: Artificial Intelligence APIs
+  GPT.do: GPT-3 Templates API
   GPT-3 Codex: https://codex.do/api
   
 Content:
