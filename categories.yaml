@@ -187,7 +187,7 @@ Communication:
   Texts.do: https://texts.do/api
   Slack.do: https://slack.do/api
   
-functions:
+Functions:
   Functions: https://functions.do/api
   Dynamic Function: https://function.do/api
   
@@ -270,17 +270,23 @@ cloudflare:
   Service Bindings: https://service.do/api
   Workers: https://workers.cf/api
   Workers for Platforms: https://workers.do/api
-libraries:
-  Lodash: https://lodash.do/api
-  Lyra: https://lyra.do/api
-integrations:
-  Airtable Base API: https://base.do/api
+  
+Libraries:
+  Lodash.do: Chainable Lodash API
+  Lyra.do: Lyra Full Text Search Engine
+  
+Integrations:
+  Base.do: Airtable Base API
+  Discord.do: Discord Integration API
+  Slack.do: Slack Integration API
   Zapier Zap Generation: https://zap.do/api
-assets:
+  
+Assets:
   Icons: https://icons.do/api
   Images: https://images.do/api
   Open Graph: https://ogimage.do/api
-marketing:
+  
+Marketing:
   API Landing Pages: https://api.page/api
   Blogs: https://blogs.do/api
   Chat Boxes: https://chat.boxes.do/api
@@ -291,7 +297,8 @@ marketing:
   Launches: https://launches.do/api
   Logos: https://logos.do/api
   Product Hunts: https://product.hunts.do/api
-commerce:
+  
+Commerce:
   ACH Transfers: https://ach.do/api
   Bill of Sale: https://bos.do/api
   Checkout: https://checkout.do/api
@@ -302,14 +309,17 @@ commerce:
   Notarize: https://notarize.do/api
   Payments: https://payments.do/api
   Subscriptions: https://subscriptions.do/api
-workflows:
+  
+Workflows:
   Workflows: https://workflows.do/api
   Concierge: https://concierge.do/api
   Notary: https://notary.do/api
-apps:
+  
+Apps:
   CRMs: https://crms.do/api
   Concierge: https://concierge.do/api
-automotive:
+  
+Automotive:
   Automotive Data: https://auto.dev/api
   Auto Commerce APIs: https://driv.ly/api
   Dealer Service: https://dealers.do/api
