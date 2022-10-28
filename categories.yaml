@@ -30,11 +30,14 @@ Security:
   OAuth.do: OAuth 2.0 API
   
 Transformation:
-  JSONPath: https://json.path.do/api
-  JMESPath: https://jmes.path.do/api
-  Lodash: https://lodash.do/api
-  Pluck: https://pluck.do/api
-  XPath: https://x.path.do/api
+  JSON.Path.do: JSONPath API
+  JMES.Path.do: JMESPath API
+  Lodash.do: Chainable Lodash API
+  Pluck.do: Pluck API
+  Uniq.do: Unique Data API
+  Sort.do: Data Sort API
+  Reduce.do: Data Reducer API
+  X.Path.do: XPath API
   
 Tools:
   Count: https://count.do/api
