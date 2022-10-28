@@ -1,12 +1,12 @@
-apis.do:
-  icon: 🚀
-  type: core
-  description: Hypermedia-driven APIs
-  endpoints:
-    List Categories: /api
-    Get Category: /:type
-    Search APIs: /search/:term
-  examples:
-    Get Utilities: /utilities
-    Search for Data: /search/data
-    
+icon: 🚀
+type: core
+description: Hypermedia-driven APIs
+
+endpoints:
+  List Categories: /api
+  Get Category: /:type
+  Search APIs: /search/:term
+  
+examples:
+  Get Utilities: /utilities
+  Search for Data: /search/data
