@@ -114,19 +114,18 @@ Then you interactively use the API at: <https://apis.do/api>
 ```
 
 ### Core:
-  - [APIs:  ](https://apis.do/api)
-  - [Context:  ](https://ctx.do/api)
+  - [APIs.do: Hypermedia-driven APIs](https://apis.do/api)
+  - [ctx.do: Context Enrichment API](https://ctx.do/api)
   
 ### Primitives:
-  - [APIs:  ](https://apis.do/api)
-  - [Triggers:  ](https://triggers.do/api)
-  - [Searches:  ](https://searches.do/api)
-  - [Actions:  ](https://actions.do/api)
-  - [Entity:  ](https://entity.do/api)
-  - [Package:  ](https://pkg.do/api)
-  - [Resource:  ](https://resource.do/api)
-  - [CRUD:  ](https://crud.do/api)
-  - [Objects:  ](https://objects.do/api)
+  - [triggers.do: API Triggers](https://triggers.do/api)
+  - [searches.do: API Searches](https://searches.do/api)
+  - [actions.do: API Actions](https://actions.do/api)
+  - [entity.do: Entity Definition API](https://entity.do/api)
+  - [resource.do: Entity Instance Resource API](https://resource.do/api)
+  - [pkg.do: Package Manager API](https://pkg.do/api)
+  - [crud.do: List + CRUD API](https://crud.do/api)
+  - [objects.do: Objects API](https://objects.do/api)
   
 ### SaaS:
   - [Analytics:  ](https://analytics.do/api)
