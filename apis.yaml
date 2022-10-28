@@ -66,7 +66,8 @@ Formats:
   ES6.do: ES6 Javascript Generation & Transformation API
   Typescript.do: Typescript Generation & Transformation API
   GIF.do: PNG Generation & Transformation API
-  HTM.do: HTML Generation & Transformation API
+  HTM.do: HTML Generation & Transformation APII
+  JSN.do: JSON Generation & Transformation API
   MP4.do: MPEG4 Generation & Transformation API
   PNG.do: PNG Generation & Transformation API
   SVG.do: SVG Generation & Transformation API
@@ -244,14 +245,15 @@ Code:
   Abstract Syntax Tree Generation: https://syntax.do/api
   Algorithm Library: https://algorithms.do/api
   ESBuild Transpilation: https://esbuild.do/api
-  "ES6 ": https://es6.do/api
-  "Eval ": https://eval.do/api
-  "Gist ": https://gist.do/api
-  "JSX ": https://jsx.do/api
-  "Lint ": https://lint.do/api
-  "Loops ": https://loops.do/api
-  "Modules ": https://modules.do/api
-  "Packages ": https://pkg.do/api
+  ES6: https://es6.do/api
+  Eval.do: https://eval.do/api
+  Gist.do: https://gist.do/api
+  JSX.do: https://jsx.do/api
+  Lint.do: Lint API & GitHub App
+  Prettier.do: Prettier API & Github App
+  Loops.do: https://loops.do/api
+  Modules.do: https://modules.do/api
+  Pkg.do: Package Management API & SDK
   README.do: README Generation API & GitHub API
 testing:
   API Testing: https://api.qa/api
