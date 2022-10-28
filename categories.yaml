@@ -7,11 +7,12 @@ Primitives:
   Searches.do: API Searches
   Actions.do: API Actions
   
-  Entity: https://entity.do/api
-  Package: https://pkg.do/api
-  Resource: https://resource.do/api
-  CRUD: https://crud.do/api
-  Objects: https://objects.do/api
+  Entity.do: Entity Definition API
+  Resource.do: Resource Instance API
+  Objects.do: Durable Object API
+  
+  CRUD.do: List + CRUD API
+  Pkg.do: Package Management API
   
 SaaS:
   Analytics: https://analytics.do/api
@@ -21,23 +22,27 @@ SaaS:
   Monetize: https://monetize.do/api
   Subscriptions: https://subscriptions.do/api
   Users: https://users.do/api
-security:
+  
+Security:
   API Keys: https://apikeys.do/api
   Identity: https://identity.do/api
   JWT Tokens: https://jwt.do/api
   OAuth 2.0: https://oauth.do/api
-transformation:
+  
+Transformation:
   JSONPath: https://json.path.do/api
   JMESPath: https://jmes.path.do/api
   Lodash: https://lodash.do/api
   Pluck: https://pluck.do/api
   XPath: https://x.path.do/api
-tools:
+  
+Tools:
   Count: https://count.do/api
   Counters: https://counters.do/api
   Debug: https://debug.do/api
   Logging: https://logging.do/api
-utilities:
+  
+Utilities:
   Decode: https://decode.do/api
   Flatten: https://flatten.do/api
   Filter: https://filter.do/api
@@ -50,16 +55,20 @@ utilities:
   SCREAMING_SNAKE_CASE_KEYS: https://screaming.snake.case.do/api
   TitleCaseKeys: https://title.case.do/api
   Sentence case keys: https://sentence.case.do/api
-formats:
-  CSV: https://csv.do/api
-  Markdown: https://markdown.do/api
-  JavaScript: https://es6.do/api
-  TypeScript: https://typescript.do/api
-  XML: https://xml.do/api
-  YAML: https://yaml.do/api
-convert:
-  Convert: https://convert.do/api
-  CSV to JSON: https://csv.do/api
+  
+Formats:
+  CSV.do: CSV Generation & Transformation API
+  Markdown.do: Markdown Generation & Transformation API
+  ES6.do: ES6 Javascript Generation & Transformation API
+  Typescript.do: Typescript Generation & Transformation API
+  PNG.do: PNG Generation & Transformation API
+  SVG.do: SVG Generation & Transformation API
+  XML.do: XML Conversion & Transformation API
+  YAML.do: YAML Conversion & Transformation API
+  
+Convert:
+  Convert.do: File Conversion APIs
+  CSV.do: CSV to JSON: https://csv.do/api
   CSV to YAML: https://csv.do/api
   HTML to JSON: https://htm.do/api
   HTML to Markdown: https://markdown.do/api
@@ -76,15 +85,18 @@ convert:
   Markdown to HTML: https://markdown.do/api
   YAML to CSV: https://yaml.do/api
   YAML to JSON: https://yaml.do/api
-search:
+  
+Search:
   Searches: https://searches.do/api
   Lookup: https://lookup.do/api
-crypto:
-  Encrypt: https://encrypt.do/api
-  Decrypt: https://decrypt.do/api
-  Hashes: https://hashes.do/api
-  HMAC: https://hmac.do/api
-  Vault: https://vault.do/api
+  
+Crypto:
+  Encrypt.do: Encryption API
+  Decrypt.do: Decryption API
+  Hashes.do: Hashing API
+  HMAC.do: HMAC Generation & Validation API
+  Vault.do: Secret Vault API
+  
 state:
   Finite State Machines: https://state.do/api
   State Machines: https://state.machines.do/api
