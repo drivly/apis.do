@@ -255,12 +255,14 @@ Code:
   Modules.do: https://modules.do/api
   Pkg.do: Package Management API & SDK
   README.do: README Generation API & GitHub API
-testing:
-  API Testing: https://api.qa/api
-  API Status Page: https://api.status.page.as/api
+  
+Testing:
+  API.QA: Dynamic Hypermedia-driven API Testing API & SDK
+  API.Status.Page.as: API Status Page
   Performance Benchmarking: https://benchmark.do/api
   Performance Testing: https://perf.as/api
   Status Page: https://status.page.as/api
+  
 cloudflare:
   Cloudflare: https://cloudflare.do/api
   API: https://api.cf/api
