@@ -173,14 +173,16 @@ Durable Objects:
   Indexes.do: https://indexes.do/api
   Locations.do: https://locations.do/api
   
-analytics:
+Analytics:
   Analytics: https://analytics.do/api
-communication:
-  Alerts: https://alerts.do/api
-  Discord: https://discord.do/api
-  Email: https://emails.do/api
-  Text: https://texts.do/api
-  Slack: https://slack.do/api
+  
+Communication:
+  Alerts.do: https://alerts.do/api
+  Discord.do: https://discord.do/api
+  Emails.do: https://emails.do/api
+  Texts.do: https://texts.do/api
+  Slack.do: https://slack.do/api
+  
 functions:
   Functions: https://functions.do/api
   Dynamic Function: https://function.do/api
@@ -313,19 +315,21 @@ tbd:
   Encrypted: https://encrypted.do/api
   Path: https://path.do/api
 glyph:
-  入 Function: https://入.io/api
-  凵 Schema: https://凵.io/api
-  口 Resource: https://口.io/api
-  回 Entity: https://回.io/api
-  巛 Function: https://巛.io/api
-  ılıl Analytics: https://ılıl.com/api
-  彡 Database: https://彡.io/api
-  亘 Page: https://亘.io/api
-  目 List: https://目.io/api
-  田 Collection: https://田.io/api
-  卌 Counter: https://卌.io/api
-fun:
+  入: Function
+  凵: Schema
+  口: Resource
+  回: Entity
+  巛: Link
+  ılıl: Analytics
+  彡: Database
+  亘: Page
+  目: List
+  田: Collection
+  卌: Counter
+  
+Fun:
   🚀 Emojis: https://emojis.do/api
+  
 opportunities:
   Careers: https://career.do/api
   Internships: https://internships.do/api
