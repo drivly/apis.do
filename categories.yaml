@@ -190,7 +190,8 @@ Communication:
 functions:
   Functions: https://functions.do/api
   Dynamic Function: https://function.do/api
-apis:
+  
+APIs:
   API Management: https://api.mgmt.do/api
   Testing: https://api.qa/api
   GraphQL: https://graphql.do/api
@@ -200,15 +201,18 @@ apis:
   Proxy: https://proxies.do/api
   Rate Limit: https://rate.limit.do/api
   Webhooks: https://webhooks.do/api
-schema:
+  
+Schema:
   Schema Generation: https://schema.do/api
   GraphQL Schema: https://gql.do/api
-personas:
+  
+Personas:
   Builders: https://builders.do/api
   Employees: https://employees.do/api
   Engineers: https://engineers.do/api
   Humans: https://humans.do/api
-databases:
+  
+Databases:
   Database: https://database.do/api
   GraphDL: https://graphdl.org/api
   Graph Database: https://graph.do/api
@@ -216,22 +220,26 @@ databases:
   KVDB: https://kvdb.do/api
   NoSQL: https://nosql.do/api
   SQLite: https://sqlite.do/api
-pipes:
+  
+Pipes:
   Pipes: https://pipes.do/api
   Chains: https://chains.do/api
   Commands: https://commands.do/api
   Compose: https://compose.do/api
   Console: https://console.do/api
   Grep: https://grep.do/api
-ai:
+  
+AI:
   Artificial Intelligences: https://ais.do/api
   GPT-3 Templates: https://gpt.do/api
   GPT-3 Codex: https://codex.do/api
-content:
+  
+Content:
   Content: https://content.do/api
   Markdown: https://markdown.do/api
   MDX: https://mdx.do/api
-code:
+  
+Code:
   Abstract Syntax Tree Generation: https://syntax.do/api
   Algorithm Library: https://algorithms.do/api
   ESBuild Transpilation: https://esbuild.do/api
@@ -243,6 +251,7 @@ code:
   "Loops ": https://loops.do/api
   "Modules ": https://modules.do/api
   "Packages ": https://pkg.do/api
+  README.do: README Generation API & GitHub API
 testing:
   API Testing: https://api.qa/api
   API Status Page: https://api.status.page.as/api
