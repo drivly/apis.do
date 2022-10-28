@@ -101,67 +101,78 @@ Crypto:
   Vault.do: Secret Vault API
   
 state:
-  Finite State Machines: https://state.do/api
-  State Machines: https://state.machines.do/api
-pubsub:
+  State.do: Finite State Machine API
+  State.Machines.do: State Machine API
+  
+PubSub:
   PubSub: https://pubsub.do/api
   Triggers: https://triggers.do/api
-iot:
+  
+IoT:
   MQTT: https://mqtt.do/api
-data:
-  Database: https://database.do/api
-  Bucket: https://database.do/api
-  Examples: https://examples.do/api
-  Lists: https://lists.do/api
-  Loader: https://loader.do/api
-cicd:
-  Builds: https://builds.do/api
-  Deploys: https://deploys.do/api
-  Environment: https://env.do/api
-http:
-  Proxy: https://prxy.do/api
-product:
-  Features: https://features.do/api
-  Feature Flags: https://feature.flags.do/api
-events:
-  Events: https://events.do/api
-  Triggers: https://triggers.do/api
-  Alarms: https://alarms.do/api
-  Discord: https://discord.do/api
-  Email: https://emails.do/api
-  Text: https://texts.do/api
-  Slack: https://slack.do/api
-  Timer: https://timer.do/api
-  Webhooks: https://webhooks.do/api
-web:
-  Caches: https://caches.do/api
-  Cookies: https://cookies.do/api
-  CORS: https://cors.do/api
-  Downloads: https://downloads.do/api
-  Embed: https://embed.do/api
-  Fetch: https://fetch.do/api
-  Fetcher: https://fetcher.do/api
-  Files: https://files.do/api
-  Flows: https://flows.do/api
-  Pages: https://pages.do/api
-  Scraper: https://scraper.do/api
-  Rewrites: https://rewrites.do/api
-  Redirects: https://redirects.do/api
-domains:
-  CNAME Proxy: https://cname.do/api
-  DDNS Service: https://ddns.do/api
-  Hostnames: https://hostnames.do/api
-  Hostname API: https://hostname.do/api
-  Name Servers: https://nameservers.do/api
-durableObjects:
-  Alarms: https://alarms.do/api
-  Copy: https://copy.do/api
-  Backup: https://backup.do/api
-  Restore: https://restore.do/api
-  Import: https://import.do/api
-  Export: https://export.do/api
-  Indexes: https://indexes.do/api
-  Locations: https://locations.do/api
+  
+Data:
+  Database.do: https://database.do/api
+  Bucket.do: https://database.do/api
+  Examples.do: https://examples.do/api
+  Lists.do: https://lists.do/api
+  Loader.do: https://loader.do/api
+  
+CICD:
+  Builds.do: https://builds.do/api
+  Deploys.do: https://deploys.do/api
+  Environment.do: https://env.do/api
+  
+HTTP:
+  Prxy.do: HTTP Proxy API
+  
+Product:
+  Features.do: Feature Prioritization & Management API
+  Feature.Flags.do: Feature Flag API
+  
+Events:
+  Events.do: https://events.do/api
+  Triggers.do: https://triggers.do/api
+  Alarms.do: https://alarms.do/api
+  Discord.do: https://discord.do/api
+  Emails.do: https://emails.do/api
+  Texts.do: https://texts.do/api
+  Slack.do: https://slack.do/api
+  Timer.do: https://timer.do/api
+  Webhooks.do: Webhook Capture API
+  
+Web:
+  Caches.do: https://caches.do/api
+  Cookies.do: https://cookies.do/api
+  CORS.do: https://cors.do/api
+  Downloads.do: https://downloads.do/api
+  Embed.do: https://embed.do/api
+  Fetch.do: https://fetch.do/api
+  Fetcher.do: https://fetcher.do/api
+  Files.do: https://files.do/api
+  Flows.do: https://flows.do/api
+  Pages.do: https://pages.do/api
+  Scraper.do: https://scraper.do/api
+  Rewrites.do: https://rewrites.do/api
+  Redirects.do: https://redirects.do/api
+  
+Domains:
+  CNAME.do: https://cname.do/api
+  DDNS.do: https://ddns.do/api
+  Hostnames.do: https://hostnames.do/api
+  Hostname.do: https://hostname.do/api
+  NameServers.do: https://nameservers.do/api
+  
+Durable Objects:
+  Alarms.do: https://alarms.do/api
+  Copy.do: https://copy.do/api
+  Backup.do: https://backup.do/api
+  Restore.do: https://restore.do/api
+  Import.do: https://import.do/api
+  Export.do: https://export.do/api
+  Indexes.do: https://indexes.do/api
+  Locations.do: https://locations.do/api
+  
 analytics:
   Analytics: https://analytics.do/api
 communication:
