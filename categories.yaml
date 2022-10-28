@@ -15,19 +15,19 @@ Primitives:
   Pkg.do: Package Management API
   
 SaaS:
-  Analytics: https://analytics.do/api
-  Customers: https://customers.do/api
-  Dashboard: https://dash.do/api
-  Funnels: https://funnels.do/api
-  Monetize: https://monetize.do/api
-  Subscriptions: https://subscriptions.do/api
-  Users: https://users.do/api
+  Analytics.do: Simple Analytics API
+  Customers.do: Customer Management API
+  Dashboard.do: Dynamic Dashboards from APIs
+  Funnels.do: Funnel Management API
+  Monetize.do: Monitization Management API
+  Subscriptions.do: Subscription Management API
+  Users.do: User Management API
   
 Security:
-  API Keys: https://apikeys.do/api
-  Identity: https://identity.do/api
-  JWT Tokens: https://jwt.do/api
-  OAuth 2.0: https://oauth.do/api
+  APIKeys.do: API Keys Management API
+  Identity.do: Identity Management API
+  JWT.do: JWT Token Generation & Validation API
+  OAuth.do: OAuth 2.0 API
   
 Transformation:
   JSONPath: https://json.path.do/api
