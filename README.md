@@ -1,7 +1,7 @@
 # APIs.do - Hypermedia API Directory
 
 ### Core:
-  - [APIs.do: Hypermedia-driven APIs](https://apis.do/api) ([API](https://apis.do/api), [Docs](https://apis.do/docs), [Repo](https://github.com/drivly/apis.do), [Roadmap](https://github.com/drivly/apis.do/issues/1), [Issues](https://github.com/drivly/apis.do/issues))
+  - [APIs.do: Hypermedia-driven APIs](https://apis.do) ([API](https://apis.do/api), [Docs](https://apis.do/docs), [Repo](https://github.com/drivly/apis.do), [Roadmap](https://github.com/drivly/apis.do/issues/1), [Issues](https://github.com/drivly/apis.do/issues))
   - [ctx.do: Context Enrichment API](https://ctx.do/api)
   
 ### Primitives:
