@@ -21,13 +21,13 @@ Security:
   OAuth.do: OAuth 2.0 API
   
 Transformation:
-  JSON.Path.do: JSONPath API
-  JMES.Path.do: JMESPath API
-  Lodash.do: Chainable Lodash API
   Pluck.do: Pluck API
   Uniq.do: Unique Data API
   Sort.do: Data Sort API
   Reduce.do: Data Reducer API
+  Lodash.do: Chainable Lodash API
+  JSON.Path.do: JSONPath API
+  JMES.Path.do: JMESPath API
   X.Path.do: XPath API
   
 Tools:
@@ -121,8 +121,8 @@ Events:
   
 Web:
   Caches.do: https://caches.do/api
-  Cookies.do: https://cookies.do/api
-  CORS.do: https://cors.do/api
+  Cookies.do: Cookie Management API & SDK
+  CORS.do: CORS Proxy
   Downloads.do: https://downloads.do/api
   Embed.do: https://embed.do/api
   Fetch.do: https://fetch.do/api
@@ -135,7 +135,7 @@ Web:
   Redirects.do: https://redirects.do/api
   
 Domains:
-  CNAME.do: https://cname.do/api
+  CNAME.do: Dynamic CNAME Proxy Service
   DDNS.do: https://ddns.do/api
   Hostnames.do: https://hostnames.do/api
   Hostname.do: https://hostname.do/api
