@@ -14,15 +14,6 @@ Primitives:
   CRUD.do: List + CRUD API
   Pkg.do: Package Management API
   
-SaaS:
-  Analytics.do: Simple Analytics API
-  Customers.do: Customer Management API
-  Dashboard.do: Dynamic Dashboards from APIs
-  Funnels.do: Funnel Management API
-  Monetize.do: Monitization Management API
-  Subscriptions.do: Subscription Management API
-  Users.do: User Management API
-  
 Security:
   APIKeys.do: API Keys Management API
   Identity.do: Identity Management API
@@ -291,6 +282,15 @@ Assets:
   Icons: https://icons.do/api
   Images: https://images.do/api
   Open Graph: https://ogimage.do/api
+  
+SaaS:
+  Analytics.do: Simple Analytics API
+  Customers.do: Customer Management API
+  Dashboard.do: Dynamic Dashboards from APIs
+  Funnels.do: Funnel Management API
+  Monetize.do: Monitization Management API
+  Subscriptions.do: Subscription Management API
+  Users.do: User Management API
   
 Marketing:
   API.Page: API Landing Pages
