@@ -53,6 +53,7 @@ Utilities:
   
 Formats:
   CSV.do: CSV Generation & Transformation API
+  TSV.do: TSV Generation & Transformation API
   Markdown.do: Markdown Generation & Transformation API
   ES6.do: ES6 Javascript Generation & Transformation API
   Typescript.do: Typescript Generation & Transformation API
@@ -64,26 +65,6 @@ Formats:
   SVG.do: SVG Generation & Transformation API
   XML.do: XML Conversion & Transformation API
   YAML.do: YAML Conversion & Transformation API
-  
-Convert:
-  Convert.do: File Conversion APIs
-  CSV.do: CSV to JSON: https://csv.do/api
-  CSV to YAML: https://csv.do/api
-  HTML to JSON: https://htm.do/api
-  HTML to Markdown: https://markdown.do/api
-  HTML to PDF: https://markdown.do/api
-  Javascript to JSON: https://es6.do/api
-  JSON to CSV: https://csv.do/api
-  JSON to HTML: https://htm.do/api
-  JSON to Javascript: https://es6.do/api
-  JSON to PDF: https://pdf.do/api
-  JSON to Markdown: https://markdown.do/api
-  JSON to YAML: https://yaml.do/api
-  JSON to XML: https://xml.do/api
-  Markdown to JSON: https://markdown.do/api
-  Markdown to HTML: https://markdown.do/api
-  YAML to CSV: https://yaml.do/api
-  YAML to JSON: https://yaml.do/api
   
 Search:
   Searches.do: https://searches.do/api
@@ -104,20 +85,21 @@ PubSub:
   PubSub.do: PubSub Publisher & Subscriber APIs
   
 IoT:
-  MQTT.do: https://mqtt.do/api
+  MQTT.do: MQTT Proxy & API
   
 Data:
-  Database.do: https://database.do/api
+  Database.do: Global Edge Databases
   KVDB.do: KeyValue-based Database 
-  Bucket.do: https://database.do/api
-  Examples.do: https://examples.do/api
-  Lists.do: https://lists.do/api
-  Loader.do: https://loader.do/api
+  Bucket.do: Read & Write Files to a Bucket
+  Examples.do: Data Examples API
+  Lists.do: Data Lists API
+  Loader.do: Data Loader API
   
 CICD:
-  Builds.do: https://builds.do/api
-  Deploys.do: https://deploys.do/api
-  Environment.do: https://env.do/api
+  CICD.do: Continuous Integration & Deployment API
+  Builds.do: Builds Management API
+  Deploys.do: Deploy Management API
+  Env.do: Environment Management API
   
 HTTP:
   Prxy.do: HTTP Proxy API
