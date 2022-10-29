@@ -258,12 +258,12 @@ Integrations:
   Base.do: Airtable Base API
   Discord.do: Discord Integration API
   Slack.do: Slack Integration API
-  Zapier Zap Generation: https://zap.do/api
+  Zap.do: Zapier Zap Generation API
   
 Assets:
-  Icons: https://icons.do/api
-  Images: https://images.do/api
-  Open Graph: https://ogimage.do/api
+  Icons: Icon Search API & CDN
+  Images: Image Search API & CDN
+  Open Graph: Dynamic Open Graph Image Generation
   
 SaaS:
   Analytics.do: Simple Analytics API
@@ -317,14 +317,14 @@ Automotive:
   Electric Vehicles API: https://evs.to/api
   
 Startup:
-  Experiment.do: https://experiment.do/api
-  Goals.do: https://goals.do/api
-  Hiring.do: https://hiring.do/api
-  Ideate.do: https://ideate.do/api
-  ID8.do: Ideate
-  IdeaFlow.do: Idea Flow Management xAPI
-  Mission: https://mission.do/api
-  Objectives & Key Results: https://okr.do/api
+  Experiment.do: Experiment Management API
+  Goals.do: Goal Management API
+  Hiring.do: Hiring Talent
+  Ideate.do: Ideate API
+  ID8.do: Ideate API
+  IdeaFlow.do: IdeaFlow Management xAPI
+  Mission.do: Mission Statement API
+  OKR.do: Objectives & Key Results API
   
 TBD:
   Directory: https://directory.do/api
