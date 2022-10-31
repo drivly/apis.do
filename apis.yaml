@@ -141,17 +141,17 @@ Domains:
   NameServers.do: Nameserver API
   
 Durable Objects:
-  Alarms.do: https://alarms.do/api
-  Copy.do: https://copy.do/api
-  Backup.do: https://backup.do/api
-  Restore.do: https://restore.do/api
-  Import.do: https://import.do/api
-  Export.do: https://export.do/api
-  Indexes.do: https://indexes.do/api
-  Locations.do: https://locations.do/api
+  Alarms.do: Durable Object Alarms
+  Copy.do: Copy Durable Objects
+  Backup.do: Backup Durable Objects
+  Restore.do: Restore Durable Objects
+  Import.do: Import Durable Objects
+  Export.do: Export Durable Objects
+  Indexes.do: Index Durable Objects
+  Locations.do: Durable Object Locations
   
 Analytics:
-  Analytics: https://analytics.do/api
+  Analytics: Simple Analytics API
   
 Communication:
   Alerts.do: Alert API
@@ -180,10 +180,10 @@ Schema:
   GQL.do: GraphQL Schema Generation & Validation API
   
 Personas:
-  Builders.do: https://builders.do/api
-  Employees.do: https://employees.do/api
-  Engineers.do: https://engineers.do/api
-  Humans.do: https://humans.do/api
+  Builders.do: Builder Persona API
+  Employees.do: Employee Persona API
+  Engineers.do: Engineer Persona API
+  Humans.do: Human API
   
 Databases:
   Database.do: Global Edge Databases
@@ -217,25 +217,25 @@ Content:
   
 Code:
   Syntax.do: Abstract Syntax Tree Generation
-  Algorithm Library: https://algorithms.do/api
-  ESBuild Transpilation: https://esbuild.do/api
-  ES6: https://es6.do/api
-  Eval.do: https://eval.do/api
-  Gist.do: https://gist.do/api
-  JSX.do: https://jsx.do/api
+  Algorithms.do: Algorithm API
+  ESBuild.do: Dynamic ESBuild API
+  ES6: ES6 Javascript API
+  Eval.do: Javascript Eval API
+  Gist.do: Github Gist Conversion API
+  JSX.do: JSX Rendering API
   Lint.do: Lint API & GitHub App
   Prettier.do: Prettier API & Github App
-  Loops.do: https://loops.do/api
-  Modules.do: https://modules.do/api
+  Loops.do: Loops-as-a-Service API
+  Modules.do: Javascript Modules API
   Pkg.do: Package Management API & SDK
   README.do: README Generation API & GitHub API
   
 Testing:
   API.QA: Dynamic Hypermedia-driven API Testing API & SDK
-  API.Status.Page.as: API Status Page
-  Performance Benchmarking: https://benchmark.do/api
-  Performance Testing: https://perf.as/api
-  Status Page: https://status.page.as/api
+  Benchmark.do: Performance Benchmarking API
+  Perf.do: Performance Testing API
+  Status.Pages.do: Status Pages
+  API.Status.Pages.do: API Status Pages
   
 cloudflare:
   Cloudflare: https://cloudflare.do/api
