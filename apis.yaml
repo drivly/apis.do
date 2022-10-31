@@ -238,17 +238,18 @@ Testing:
   API.Status.Pages.do: API Status Pages
   
 cloudflare:
-  Cloudflare: https://cloudflare.do/api
-  API: https://api.cf/api
-  Colo: https://colo.do/api
-  D1: https://d1.cf/api
-  Durable Objects: https://do.cf/api
-  DO Alarms: https://alarms.cf/api
-  Environment: https://env.do/api
-  KV: https://kv.cf/api
-  Service Bindings: https://service.do/api
+  Cloudflare: Cloud
+  API.cf: Simple Cloudflare API
+  Colo.do: Cloudflare Colo API
+  D1.cf: Cloudflare D1 SQLite
+  DO.cf: Cloudflare Durable Objects
+  Alarms.cf: Cloudflare Durable Object Alarms
+  Env.do: Environment Management API
+  KV.cf: Simple KV API
+  Service.do: Service Bindings API
   Workers: https://workers.cf/api
-  Workers for Platforms: https://workers.do/api
+  Worker.do: Dynamic Worker Generation API
+  Workers.do: Dynamic Workers for Platforms
   
 Libraries:
   Lodash.do: Chainable Lodash API
