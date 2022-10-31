@@ -288,18 +288,18 @@ Marketing:
   
 Commerce:
   ACH.do: ACH Transfers API
-  Bill of Sale: https://bos.do/api
-  Checkout: https://checkout.do/api
-  eContract: https://econtract.do/api
-  Income Verification: https://income.do/api
-  Lenders: https://lenders.do/api
-  Non-Disclosure Agreement: https://nda.do/api
-  Notarize: https://notarize.do/api
-  Payments: https://payments.do/api
-  Subscriptions: https://subscriptions.do/api
+  BOS.do: Bill of Sale Management API
+  Checkout.do: Simple Checkout API
+  eContract.do: eContract Management API
+  Income.do: Income Verification API
+  Lenders.do: Lender Management API
+  NDA.do: Non-Disclosure Agreement API
+  Notarize.do: Remote Online Notarizations API
+  Payments.do: Payment Capture API
+  Subscriptions.do: Subscription Management API
   
 Workflows:
-  Workflows.do: https://workflows.do/api
+  Workflows.do: Workflow Management APIs
   Concierge.do: Concierge APIs
   Notary.do: Remote Online Notary API
   
@@ -323,16 +323,10 @@ Startup:
   IdeaFlow.do: IdeaFlow Management xAPI
   Mission.do: Mission Statement API
   OKR.do: Objectives & Key Results API
+
   
-TBD:
-  Directory.do: https://directory.do/api
-  Encrypted.do: https://encrypted.do/api
-  Path.do: https://path.do/api
-  
-  
-  Glyph.do: https://glyph.do/api
-  
-Fun:
+Symbols:
+  Glyph.do: Glyph API 入
   Emojis.do: Emoji API 🚀
   
 Opportunities:
