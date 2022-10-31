@@ -109,37 +109,36 @@ Product:
   Feature.Flags.do: Feature Flag API
   
 Events:
-  Events.do: https://events.do/api
-  Triggers.do: https://triggers.do/api
-  Alarms.do: https://alarms.do/api
-  Discord.do: https://discord.do/api
-  Emails.do: https://emails.do/api
-  Texts.do: https://texts.do/api
-  Slack.do: https://slack.do/api
-  Timer.do: https://timer.do/api
+  Events.do: Event Subscription & Management API
+  Alarms.do: Alarm Management API
+  Discord.do: Simple Discord API
+  Emails.do: Simple Email API
+  Texts.do: Simple Text Message API
+  Slack.do: Simple Slack API
+  Timer.do: Simple Timer API
   Webhooks.do: Webhook Capture API
   
 Web:
-  Caches.do: https://caches.do/api
+  Caches.do: Cache Management API
   Cookies.do: Cookie Management API & SDK
   CORS.do: CORS Proxy
-  Downloads.do: https://downloads.do/api
-  Embed.do: https://embed.do/api
-  Fetch.do: https://fetch.do/api
-  Fetcher.do: https://fetcher.do/api
-  Files.do: https://files.do/api
-  Flows.do: https://flows.do/api
-  Pages.do: https://pages.do/api
-  Scraper.do: https://scraper.do/api
-  Rewrites.do: https://rewrites.do/api
-  Redirects.do: https://redirects.do/api
+  Downloads.do: Download API
+  Embed.do: Embed API
+  Fetch.do: HTTP Fetch API
+  Fetcher.do: Iterative Fetcher API
+  Files.do: File Management API
+  Flows.do: Sequential Flows API
+  Pages.do: Web Pages API
+  Scraper.do: Web Scraper API
+  Rewrites.do: URL Request Rewrites
+  Redirects.do: Url Redirection API
   
 Domains:
   CNAME.do: Dynamic CNAME Proxy Service
-  DDNS.do: https://ddns.do/api
-  Hostnames.do: https://hostnames.do/api
-  Hostname.do: https://hostname.do/api
-  NameServers.do: https://nameservers.do/api
+  DDNS.do: Dynamic DNS API
+  Hostnames.do: Hostname Management API
+  Hostname.do: Hostname & Domain API
+  NameServers.do: Nameserver API
   
 Durable Objects:
   Alarms.do: https://alarms.do/api
@@ -155,11 +154,12 @@ Analytics:
   Analytics: https://analytics.do/api
   
 Communication:
-  Alerts.do: https://alerts.do/api
-  Discord.do: https://discord.do/api
-  Emails.do: https://emails.do/api
-  Texts.do: https://texts.do/api
-  Slack.do: https://slack.do/api
+  Alerts.do: Alert API
+  Discord.do: Simple Discord API
+  Emails.do: Simple Email API
+  Texts.do: Simple Text Message API
+  Slack.do: Simple Slack API
+  Tweet.do: Twitter Tweet API
   
 Functions:
   Functions.do: Dynamic Edge Functions
@@ -196,27 +196,27 @@ Databases:
   
   
 Pipes:
-  Pipes.do: https://pipes.do/api
-  Chains.do: https://chains.do/api
-  Commands.do: https://commands.do/api
-  Compose.do: https://compose.do/api
-  Console.do: https://console.do/api
-  Grep.do: https://grep.do/api
-  Uniq.do:
-  Sort.do:
+  Pipes.do: Chainable Pipes API
+  Chains.do: Chainable URL
+  Commands.do: Semantic URL Commands
+  Compose.do: Compose URL-based APIs
+  Console.do: URL-based Console
+  Grep.do: GREP as Wep API
+  Uniq.do: Unique Object Filtering API
+  Sort.do: Object Sorting API
   
 AI:
   AIs.do: Artificial Intelligence APIs
   GPT.do: GPT-3 Templates API
-  GPT-3 Codex: https://codex.do/api
+  Codex.do: GPT-3 Codex API
   
 Content:
-  Content: https://content.do/api
-  Markdown: https://markdown.do/api
-  MDX: https://mdx.do/api
+  Content: Content Management API
+  Markdown: Markdown Management API
+  MDX: MDX Management & Rendering API
   
 Code:
-  Abstract Syntax Tree Generation: https://syntax.do/api
+  Syntax.do: Abstract Syntax Tree Generation
   Algorithm Library: https://algorithms.do/api
   ESBuild Transpilation: https://esbuild.do/api
   ES6: https://es6.do/api
@@ -287,7 +287,7 @@ Marketing:
   Product.Hunts.do: Product Hunt Automation API
   
 Commerce:
-  ACH Transfers: https://ach.do/api
+  ACH.do: ACH Transfers API
   Bill of Sale: https://bos.do/api
   Checkout: https://checkout.do/api
   eContract: https://econtract.do/api
@@ -299,22 +299,20 @@ Commerce:
   Subscriptions: https://subscriptions.do/api
   
 Workflows:
-  Workflows: https://workflows.do/api
-  Concierge: https://concierge.do/api
-  Notary: https://notary.do/api
+  Workflows.do: https://workflows.do/api
+  Concierge.do: Concierge APIs
+  Notary.do: Remote Online Notary API
   
 Apps:
-  CRMs: https://crms.do/api
-  Concierge: https://concierge.do/api
+  CRMs.do: Customer Relationships Management APIs
   
 Automotive:
-  Automotive Data: https://auto.dev/api
-  Auto Commerce APIs: https://driv.ly/api
-  Dealer Service: https://dealers.do/api
-  Dealer API: https://dealer.to/api
-  OEMs.do: OEM API
-  Listings API: https://listings.do/api
-  Electric Vehicles API: https://evs.to/api
+  Auto.dev: Automotive Data & APIs
+  Driv.ly: Automotive Commerce APIs
+  Dealers.do: Dealer Services API
+  OEMs.do: Vehicle OEM API
+  Listings.do: Vehicle Listings API
+  EVs.do: Electric Vehicles API
   
 Startup:
   Experiment.do: Experiment Management API
@@ -327,30 +325,18 @@ Startup:
   OKR.do: Objectives & Key Results API
   
 TBD:
-  Directory: https://directory.do/api
-  Encrypted: https://encrypted.do/api
-  Path: https://path.do/api
+  Directory.do: https://directory.do/api
+  Encrypted.do: https://encrypted.do/api
+  Path.do: https://path.do/api
   
   
   Glyph.do: https://glyph.do/api
-Glyph:
-  入: Function
-  凵: Schema
-  口: Resource
-  回: Entity
-  巛: Link
-  ılıl: Analytics
-  彡: Database
-  亘: Page
-  目: List
-  田: Collection
-  卌: Counter
   
 Fun:
-  🚀 Emojis: https://emojis.do/api
+  Emojis.do: Emoji API 🚀
   
 Opportunities:
   Careers.do: Drivly Open Careers
   Internships.do: Drivly Open Internships
   Sponsors.do: Drivly Open Sponsorships
-  Gigs: Drivly Open Project Gigs
+  Gigs.do: Drivly Open Project Gigs
