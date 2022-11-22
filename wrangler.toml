@@ -2,6 +2,7 @@ name = "apis-do"
 route = { pattern = "*/*", zone_name = "apis.do" }
 main = "worker.js"
 usage_model = "unbound"
+logpush = true
 compatibility_date = "2022-10-23"
 
 services = [
