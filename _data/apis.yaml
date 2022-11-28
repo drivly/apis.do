@@ -151,7 +151,7 @@ Durable Objects:
   Locations.do: Durable Object Locations
   
 Analytics:
-  Analytics: Simple Analytics API
+  Analytics.do: Simple Analytics API
   
 Communication:
   Alerts.do: Alert API
@@ -189,10 +189,10 @@ Databases:
   Database.do: Global Edge Databases
   GraphDL.do: GraphDL Graph Definition Language API & SDK
   Graph.do: Global Edge Graph Database
-  KeyV: Key Value API
-  KVDB: KeyValue-based Database API
-  NoSQL: NoSQL Database API & SDK
-  SQLite: Edge SQLite Database API & SDK
+  KeyV.do: Key Value API
+  KVDB.do: KeyValue-based Database API
+  NoSQL.do: NoSQL Database API & SDK
+  SQLite.do: Edge SQLite Database API & SDK
   
   
 Pipes:
@@ -211,9 +211,9 @@ AI:
   Codex.do: GPT-3 Codex API
   
 Content:
-  Content: Content Management API
-  Markdown: Markdown Management API
-  MDX: MDX Management & Rendering API
+  Content.do: Content Management API
+  Markdown.do: Markdown Management API
+  MDX.do: MDX Management & Rendering API
   
 Code:
   Syntax.do: Abstract Syntax Tree Generation
@@ -238,7 +238,7 @@ Testing:
   API.Status.Pages.do: API Status Pages
   
 cloudflare:
-  Cloudflare: Cloud
+  Cloudflare.do: Cloud
   API.cf: Simple Cloudflare API
   Colo.do: Cloudflare Colo API
   D1.cf: Cloudflare D1 SQLite
