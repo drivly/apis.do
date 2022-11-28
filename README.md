@@ -152,7 +152,7 @@
  - [Locations.do: Durable Object Locations](https://locations.do) ([API](https://locations.do/api), [Docs](https://locations.do/docs), [Repo](https://github.com/drivly/locations.do), [Roadmap](https://github.com/drivly/locations.do/issues/1), [Issues](https://github.com/drivly/locations.do/issues)) 
 
 ### Analytics:
- - [Analytics: Simple Analytics API](https://analytics) ([API](https://analytics/api), [Docs](https://analytics/docs), [Repo](https://github.com/drivly/analytics), [Roadmap](https://github.com/drivly/analytics/issues/1), [Issues](https://github.com/drivly/analytics/issues)) 
+ - [Analytics.do: Simple Analytics API](https://analytics.do) ([API](https://analytics.do/api), [Docs](https://analytics.do/docs), [Repo](https://github.com/drivly/analytics.do), [Roadmap](https://github.com/drivly/analytics.do/issues/1), [Issues](https://github.com/drivly/analytics.do/issues)) 
 
 ### Communication:
  - [Alerts.do: Alert API](https://alerts.do) ([API](https://alerts.do/api), [Docs](https://alerts.do/docs), [Repo](https://github.com/drivly/alerts.do), [Roadmap](https://github.com/drivly/alerts.do/issues/1), [Issues](https://github.com/drivly/alerts.do/issues)) 
@@ -190,10 +190,10 @@
  - [Database.do: Global Edge Databases](https://database.do) ([API](https://database.do/api), [Docs](https://database.do/docs), [Repo](https://github.com/drivly/database.do), [Roadmap](https://github.com/drivly/database.do/issues/1), [Issues](https://github.com/drivly/database.do/issues)) 
  - [GraphDL.do: GraphDL Graph Definition Language API & SDK](https://graphdl.do) ([API](https://graphdl.do/api), [Docs](https://graphdl.do/docs), [Repo](https://github.com/drivly/graphdl.do), [Roadmap](https://github.com/drivly/graphdl.do/issues/1), [Issues](https://github.com/drivly/graphdl.do/issues)) 
  - [Graph.do: Global Edge Graph Database](https://graph.do) ([API](https://graph.do/api), [Docs](https://graph.do/docs), [Repo](https://github.com/drivly/graph.do), [Roadmap](https://github.com/drivly/graph.do/issues/1), [Issues](https://github.com/drivly/graph.do/issues)) 
- - [KeyV: Key Value API](https://keyv) ([API](https://keyv/api), [Docs](https://keyv/docs), [Repo](https://github.com/drivly/keyv), [Roadmap](https://github.com/drivly/keyv/issues/1), [Issues](https://github.com/drivly/keyv/issues)) 
- - [KVDB: KeyValue-based Database API](https://kvdb) ([API](https://kvdb/api), [Docs](https://kvdb/docs), [Repo](https://github.com/drivly/kvdb), [Roadmap](https://github.com/drivly/kvdb/issues/1), [Issues](https://github.com/drivly/kvdb/issues)) 
- - [NoSQL: NoSQL Database API & SDK](https://nosql) ([API](https://nosql/api), [Docs](https://nosql/docs), [Repo](https://github.com/drivly/nosql), [Roadmap](https://github.com/drivly/nosql/issues/1), [Issues](https://github.com/drivly/nosql/issues)) 
- - [SQLite: Edge SQLite Database API & SDK](https://sqlite) ([API](https://sqlite/api), [Docs](https://sqlite/docs), [Repo](https://github.com/drivly/sqlite), [Roadmap](https://github.com/drivly/sqlite/issues/1), [Issues](https://github.com/drivly/sqlite/issues)) 
+ - [KeyV.do: Key Value API](https://keyv.do) ([API](https://keyv.do/api), [Docs](https://keyv.do/docs), [Repo](https://github.com/drivly/keyv.do), [Roadmap](https://github.com/drivly/keyv.do/issues/1), [Issues](https://github.com/drivly/keyv.do/issues)) 
+ - [KVDB.do: KeyValue-based Database API](https://kvdb.do) ([API](https://kvdb.do/api), [Docs](https://kvdb.do/docs), [Repo](https://github.com/drivly/kvdb.do), [Roadmap](https://github.com/drivly/kvdb.do/issues/1), [Issues](https://github.com/drivly/kvdb.do/issues)) 
+ - [NoSQL.do: NoSQL Database API & SDK](https://nosql.do) ([API](https://nosql.do/api), [Docs](https://nosql.do/docs), [Repo](https://github.com/drivly/nosql.do), [Roadmap](https://github.com/drivly/nosql.do/issues/1), [Issues](https://github.com/drivly/nosql.do/issues)) 
+ - [SQLite.do: Edge SQLite Database API & SDK](https://sqlite.do) ([API](https://sqlite.do/api), [Docs](https://sqlite.do/docs), [Repo](https://github.com/drivly/sqlite.do), [Roadmap](https://github.com/drivly/sqlite.do/issues/1), [Issues](https://github.com/drivly/sqlite.do/issues)) 
 
 ### Pipes:
  - [Pipes.do: Chainable Pipes API](https://pipes.do) ([API](https://pipes.do/api), [Docs](https://pipes.do/docs), [Repo](https://github.com/drivly/pipes.do), [Roadmap](https://github.com/drivly/pipes.do/issues/1), [Issues](https://github.com/drivly/pipes.do/issues)) 
@@ -211,9 +211,9 @@
  - [Codex.do: GPT-3 Codex API](https://codex.do) ([API](https://codex.do/api), [Docs](https://codex.do/docs), [Repo](https://github.com/drivly/codex.do), [Roadmap](https://github.com/drivly/codex.do/issues/1), [Issues](https://github.com/drivly/codex.do/issues)) 
 
 ### Content:
- - [Content: Content Management API](https://content) ([API](https://content/api), [Docs](https://content/docs), [Repo](https://github.com/drivly/content), [Roadmap](https://github.com/drivly/content/issues/1), [Issues](https://github.com/drivly/content/issues)) 
- - [Markdown: Markdown Management API](https://markdown) ([API](https://markdown/api), [Docs](https://markdown/docs), [Repo](https://github.com/drivly/markdown), [Roadmap](https://github.com/drivly/markdown/issues/1), [Issues](https://github.com/drivly/markdown/issues)) 
- - [MDX: MDX Management & Rendering API](https://mdx) ([API](https://mdx/api), [Docs](https://mdx/docs), [Repo](https://github.com/drivly/mdx), [Roadmap](https://github.com/drivly/mdx/issues/1), [Issues](https://github.com/drivly/mdx/issues)) 
+ - [Content.do: Content Management API](https://content.do) ([API](https://content.do/api), [Docs](https://content.do/docs), [Repo](https://github.com/drivly/content.do), [Roadmap](https://github.com/drivly/content.do/issues/1), [Issues](https://github.com/drivly/content.do/issues)) 
+ - [Markdown.do: Markdown Management API](https://markdown.do) ([API](https://markdown.do/api), [Docs](https://markdown.do/docs), [Repo](https://github.com/drivly/markdown.do), [Roadmap](https://github.com/drivly/markdown.do/issues/1), [Issues](https://github.com/drivly/markdown.do/issues)) 
+ - [MDX.do: MDX Management & Rendering API](https://mdx.do) ([API](https://mdx.do/api), [Docs](https://mdx.do/docs), [Repo](https://github.com/drivly/mdx.do), [Roadmap](https://github.com/drivly/mdx.do/issues/1), [Issues](https://github.com/drivly/mdx.do/issues)) 
 
 ### Code:
  - [Syntax.do: Abstract Syntax Tree Generation](https://syntax.do) ([API](https://syntax.do/api), [Docs](https://syntax.do/docs), [Repo](https://github.com/drivly/syntax.do), [Roadmap](https://github.com/drivly/syntax.do/issues/1), [Issues](https://github.com/drivly/syntax.do/issues)) 
@@ -238,7 +238,7 @@
  - [API.Status.Pages.do: API Status Pages](https://api.status.pages.do) ([API](https://api.status.pages.do/api), [Docs](https://api.status.pages.do/docs), [Repo](https://github.com/drivly/api.status.pages.do), [Roadmap](https://github.com/drivly/api.status.pages.do/issues/1), [Issues](https://github.com/drivly/api.status.pages.do/issues)) 
 
 ### cloudflare:
- - [Cloudflare: Cloud](https://cloudflare) ([API](https://cloudflare/api), [Docs](https://cloudflare/docs), [Repo](https://github.com/drivly/cloudflare), [Roadmap](https://github.com/drivly/cloudflare/issues/1), [Issues](https://github.com/drivly/cloudflare/issues)) 
+ - [Cloudflare.do: Cloud](https://cloudflare.do) ([API](https://cloudflare.do/api), [Docs](https://cloudflare.do/docs), [Repo](https://github.com/drivly/cloudflare.do), [Roadmap](https://github.com/drivly/cloudflare.do/issues/1), [Issues](https://github.com/drivly/cloudflare.do/issues)) 
  - [API.cf: Simple Cloudflare API](https://api.cf) ([API](https://api.cf/api), [Docs](https://api.cf/docs), [Repo](https://github.com/drivly/api.cf), [Roadmap](https://github.com/drivly/api.cf/issues/1), [Issues](https://github.com/drivly/api.cf/issues)) 
  - [Colo.do: Cloudflare Colo API](https://colo.do) ([API](https://colo.do/api), [Docs](https://colo.do/docs), [Repo](https://github.com/drivly/colo.do), [Roadmap](https://github.com/drivly/colo.do/issues/1), [Issues](https://github.com/drivly/colo.do/issues)) 
  - [D1.cf: Cloudflare D1 SQLite](https://d1.cf) ([API](https://d1.cf/api), [Docs](https://d1.cf/docs), [Repo](https://github.com/drivly/d1.cf), [Roadmap](https://github.com/drivly/d1.cf/issues/1), [Issues](https://github.com/drivly/d1.cf/issues)) 
@@ -246,7 +246,7 @@
  - [Alarms.cf: Cloudflare Durable Object Alarms](https://alarms.cf) ([API](https://alarms.cf/api), [Docs](https://alarms.cf/docs), [Repo](https://github.com/drivly/alarms.cf), [Roadmap](https://github.com/drivly/alarms.cf/issues/1), [Issues](https://github.com/drivly/alarms.cf/issues)) 
  - [Env.do: Environment Management API](https://env.do) ([API](https://env.do/api), [Docs](https://env.do/docs), [Repo](https://github.com/drivly/env.do), [Roadmap](https://github.com/drivly/env.do/issues/1), [Issues](https://github.com/drivly/env.do/issues)) 
  - [KV.cf: Simple KV API](https://kv.cf) ([API](https://kv.cf/api), [Docs](https://kv.cf/docs), [Repo](https://github.com/drivly/kv.cf), [Roadmap](https://github.com/drivly/kv.cf/issues/1), [Issues](https://github.com/drivly/kv.cf/issues)) 
- - [Service.do: Service Bindings API](https://service.do) ([API](https://service.do/api), [Docs](https://service.do/docs), [Repo](https://github.com/drivly/service.do), [Roadmap](https://github.com/drivly/service.do/issues/1), [Issues](https://github.com/drivly/service.do/issues)) 
+ - [Services.do: Service Bindings API](https://services.do) ([API](https://services.do/api), [Docs](https://services.do/docs), [Repo](https://github.com/drivly/services.do), [Roadmap](https://github.com/drivly/services.do/issues/1), [Issues](https://github.com/drivly/services.do/issues)) 
  - [Workers.cf: Cloudflare Workers API](https://workers.cf) ([API](https://workers.cf/api), [Docs](https://workers.cf/docs), [Repo](https://github.com/drivly/workers.cf), [Roadmap](https://github.com/drivly/workers.cf/issues/1), [Issues](https://github.com/drivly/workers.cf/issues)) 
  - [Worker.do: Dynamic Worker Generation API](https://worker.do) ([API](https://worker.do/api), [Docs](https://worker.do/docs), [Repo](https://github.com/drivly/worker.do), [Roadmap](https://github.com/drivly/worker.do/issues/1), [Issues](https://github.com/drivly/worker.do/issues)) 
  - [Workers.do: Dynamic Workers for Platforms](https://workers.do) ([API](https://workers.do/api), [Docs](https://workers.do/docs), [Repo](https://github.com/drivly/workers.do), [Roadmap](https://github.com/drivly/workers.do/issues/1), [Issues](https://github.com/drivly/workers.do/issues)) 
