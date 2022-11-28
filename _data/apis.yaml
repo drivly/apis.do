@@ -246,7 +246,7 @@ cloudflare:
   Alarms.cf: Cloudflare Durable Object Alarms
   Env.do: Environment Management API
   KV.cf: Simple KV API
-  Service.do: Service Bindings API
+  Services.do: Service Bindings API
   Workers.cf: Cloudflare Workers API
   Worker.do: Dynamic Worker Generation API
   Workers.do: Dynamic Workers for Platforms
