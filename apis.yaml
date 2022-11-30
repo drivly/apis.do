@@ -77,7 +77,7 @@ Crypto:
   HMAC.do: HMAC Generation & Validation API
   Vault.do: Secret Vault API
   
-state:
+State:
   State.do: Finite State Machine API
   State.Machines.do: State Machine API
   
