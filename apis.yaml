@@ -21,6 +21,8 @@ Security:
   OAuth.do: OAuth 2.0 API
   
 Transformation:
+  Filter.do: Data Filter API
+  Iterate.do: Iteration API
   Pluck.do: Pluck API
   Uniq.do: Unique Data API
   Sort.do: Data Sort API
