@@ -122,14 +122,17 @@ Web:
   Caches.do: Cache Management API
   Cookies.do: Cookie Management API & SDK
   CORS.do: CORS Proxy
+  CSS.do: Dynamic CSS Generation & Proxy
   Downloads.do: Download API
   Embed.do: Embed API
   Fetch.do: HTTP Fetch API
   Fetcher.do: Iterative Fetcher API
   Files.do: File Management API
   Flows.do: Sequential Flows API
+  Headers.do: HTTP Fetch Header API
   Pages.do: Web Pages API
   Scraper.do: Web Scraper API
+  Screenshot.do: Web Page Screenshot API
   Rewrites.do: URL Request Rewrites
   Redirects.do: Url Redirection API
   
@@ -212,6 +215,7 @@ AI:
   
 Content:
   Content.do: Content Management API
+  Keywords.do: SEO Keyword API
   Markdown.do: Markdown Management API
   MDX.do: MDX Management & Rendering API
   
@@ -219,7 +223,7 @@ Code:
   Syntax.do: Abstract Syntax Tree Generation
   Algorithms.do: Algorithm API
   ESBuild.do: Dynamic ESBuild API
-  ES6: ES6 Javascript API
+  ES6.do: ES6 Javascript API
   Eval.do: Javascript Eval API
   Gist.do: Github Gist Conversion API
   JSX.do: JSX Rendering API
@@ -232,7 +236,9 @@ Code:
   
 Testing:
   API.QA: Dynamic Hypermedia-driven API Testing API & SDK
+  Assert.do: Unit Testing Assertion API
   Benchmark.do: Performance Benchmarking API
+  Expect.do: Unit Testing Expect API
   Perf.do: Performance Testing API
   Status.Pages.do: Status Pages
   API.Status.Pages.do: API Status Pages
