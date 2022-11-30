@@ -196,6 +196,7 @@ Databases:
   KVDB.do: KeyValue-based Database API
   NoSQL.do: NoSQL Database API & SDK
   SQLite.do: Edge SQLite Database API & SDK
+  Time.Series.do: Simple Time-series Storage & Analysis
   
   
 Pipes:
