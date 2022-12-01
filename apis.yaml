@@ -95,7 +95,8 @@ Data:
   Bucket.do: Read & Write Files to a Bucket
   Examples.do: Data Examples API
   Lists.do: Data Lists API
-  Loader.do: Data Loader API
+  Load.do: Load Data API
+  Loader.do: Recursive Data Loader API
   
 CICD:
   CICD.do: Continuous Integration & Deployment API
@@ -334,7 +335,6 @@ Startup:
   Mission.do: Mission Statement API
   OKR.do: Objectives & Key Results API
 
-  
 Symbols:
   Glyph.do: Glyph API 入
   Emojis.do: Emoji API 🚀
