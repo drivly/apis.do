@@ -246,7 +246,7 @@ Testing:
   Status.Pages.do: Status Pages
   API.Status.Pages.do: API Status Pages
   
-cloudflare:
+Cloudflare:
   Cloudflare.do: Cloud
   API.cf: Simple Cloudflare API
   Colo.do: Cloudflare Colo API
