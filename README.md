@@ -1,3 +1,4 @@
+
 # APIs.do: Hypermedia-driven APIs & SDK 
 
 ### Core:
@@ -21,6 +22,8 @@
  - [OAuth.do: OAuth 2.0 API](https://oauth.do) ([API](https://oauth.do/api), [Docs](https://oauth.do/docs), [Repo](https://github.com/drivly/oauth.do), [Roadmap](https://github.com/drivly/oauth.do/issues/1), [Issues](https://github.com/drivly/oauth.do/issues)) 
 
 ### Transformation:
+ - [Filter.do: Data Filter API](https://filter.do) ([API](https://filter.do/api), [Docs](https://filter.do/docs), [Repo](https://github.com/drivly/filter.do), [Roadmap](https://github.com/drivly/filter.do/issues/1), [Issues](https://github.com/drivly/filter.do/issues)) 
+ - [Iterate.do: Iteration API](https://iterate.do) ([API](https://iterate.do/api), [Docs](https://iterate.do/docs), [Repo](https://github.com/drivly/iterate.do), [Roadmap](https://github.com/drivly/iterate.do/issues/1), [Issues](https://github.com/drivly/iterate.do/issues)) 
  - [Pluck.do: Pluck API](https://pluck.do) ([API](https://pluck.do/api), [Docs](https://pluck.do/docs), [Repo](https://github.com/drivly/pluck.do), [Roadmap](https://github.com/drivly/pluck.do/issues/1), [Issues](https://github.com/drivly/pluck.do/issues)) 
  - [Uniq.do: Unique Data API](https://uniq.do) ([API](https://uniq.do/api), [Docs](https://uniq.do/docs), [Repo](https://github.com/drivly/uniq.do), [Roadmap](https://github.com/drivly/uniq.do/issues/1), [Issues](https://github.com/drivly/uniq.do/issues)) 
  - [Sort.do: Data Sort API](https://sort.do) ([API](https://sort.do/api), [Docs](https://sort.do/docs), [Repo](https://github.com/drivly/sort.do), [Roadmap](https://github.com/drivly/sort.do/issues/1), [Issues](https://github.com/drivly/sort.do/issues)) 
@@ -58,7 +61,7 @@
  - [ES6.do: ES6 Javascript Generation & Transformation API](https://es6.do) ([API](https://es6.do/api), [Docs](https://es6.do/docs), [Repo](https://github.com/drivly/es6.do), [Roadmap](https://github.com/drivly/es6.do/issues/1), [Issues](https://github.com/drivly/es6.do/issues)) 
  - [Typescript.do: Typescript Generation & Transformation API](https://typescript.do) ([API](https://typescript.do/api), [Docs](https://typescript.do/docs), [Repo](https://github.com/drivly/typescript.do), [Roadmap](https://github.com/drivly/typescript.do/issues/1), [Issues](https://github.com/drivly/typescript.do/issues)) 
  - [GIF.do: PNG Generation & Transformation API](https://gif.do) ([API](https://gif.do/api), [Docs](https://gif.do/docs), [Repo](https://github.com/drivly/gif.do), [Roadmap](https://github.com/drivly/gif.do/issues/1), [Issues](https://github.com/drivly/gif.do/issues)) 
- - [HTM.do: HTML Generation & Transformation APII](https://htm.do) ([API](https://htm.do/api), [Docs](https://htm.do/docs), [Repo](https://github.com/drivly/htm.do), [Roadmap](https://github.com/drivly/htm.do/issues/1), [Issues](https://github.com/drivly/htm.do/issues)) 
+ - [HTM.do: HTML Generation & Transformation API](https://htm.do) ([API](https://htm.do/api), [Docs](https://htm.do/docs), [Repo](https://github.com/drivly/htm.do), [Roadmap](https://github.com/drivly/htm.do/issues/1), [Issues](https://github.com/drivly/htm.do/issues)) 
  - [JSN.do: JSON Generation & Transformation API](https://jsn.do) ([API](https://jsn.do/api), [Docs](https://jsn.do/docs), [Repo](https://github.com/drivly/jsn.do), [Roadmap](https://github.com/drivly/jsn.do/issues/1), [Issues](https://github.com/drivly/jsn.do/issues)) 
  - [MP4.do: MPEG4 Generation & Transformation API](https://mp4.do) ([API](https://mp4.do/api), [Docs](https://mp4.do/docs), [Repo](https://github.com/drivly/mp4.do), [Roadmap](https://github.com/drivly/mp4.do/issues/1), [Issues](https://github.com/drivly/mp4.do/issues)) 
  - [PNG.do: PNG Generation & Transformation API](https://png.do) ([API](https://png.do/api), [Docs](https://png.do/docs), [Repo](https://github.com/drivly/png.do), [Roadmap](https://github.com/drivly/png.do/issues/1), [Issues](https://github.com/drivly/png.do/issues)) 
@@ -77,7 +80,7 @@
  - [HMAC.do: HMAC Generation & Validation API](https://hmac.do) ([API](https://hmac.do/api), [Docs](https://hmac.do/docs), [Repo](https://github.com/drivly/hmac.do), [Roadmap](https://github.com/drivly/hmac.do/issues/1), [Issues](https://github.com/drivly/hmac.do/issues)) 
  - [Vault.do: Secret Vault API](https://vault.do) ([API](https://vault.do/api), [Docs](https://vault.do/docs), [Repo](https://github.com/drivly/vault.do), [Roadmap](https://github.com/drivly/vault.do/issues/1), [Issues](https://github.com/drivly/vault.do/issues)) 
 
-### state:
+### State:
  - [State.do: Finite State Machine API](https://state.do) ([API](https://state.do/api), [Docs](https://state.do/docs), [Repo](https://github.com/drivly/state.do), [Roadmap](https://github.com/drivly/state.do/issues/1), [Issues](https://github.com/drivly/state.do/issues)) 
  - [State.Machines.do: State Machine API](https://state.machines.do) ([API](https://state.machines.do/api), [Docs](https://state.machines.do/docs), [Repo](https://github.com/drivly/state.machines.do), [Roadmap](https://github.com/drivly/state.machines.do/issues/1), [Issues](https://github.com/drivly/state.machines.do/issues)) 
 
@@ -243,7 +246,7 @@
  - [Status.Pages.do: Status Pages](https://status.pages.do) ([API](https://status.pages.do/api), [Docs](https://status.pages.do/docs), [Repo](https://github.com/drivly/status.pages.do), [Roadmap](https://github.com/drivly/status.pages.do/issues/1), [Issues](https://github.com/drivly/status.pages.do/issues)) 
  - [API.Status.Pages.do: API Status Pages](https://api.status.pages.do) ([API](https://api.status.pages.do/api), [Docs](https://api.status.pages.do/docs), [Repo](https://github.com/drivly/api.status.pages.do), [Roadmap](https://github.com/drivly/api.status.pages.do/issues/1), [Issues](https://github.com/drivly/api.status.pages.do/issues)) 
 
-### cloudflare:
+### Cloudflare:
  - [Cloudflare.do: Cloud](https://cloudflare.do) ([API](https://cloudflare.do/api), [Docs](https://cloudflare.do/docs), [Repo](https://github.com/drivly/cloudflare.do), [Roadmap](https://github.com/drivly/cloudflare.do/issues/1), [Issues](https://github.com/drivly/cloudflare.do/issues)) 
  - [API.cf: Simple Cloudflare API](https://api.cf) ([API](https://api.cf/api), [Docs](https://api.cf/docs), [Repo](https://github.com/drivly/api.cf), [Roadmap](https://github.com/drivly/api.cf/issues/1), [Issues](https://github.com/drivly/api.cf/issues)) 
  - [Colo.do: Cloudflare Colo API](https://colo.do) ([API](https://colo.do/api), [Docs](https://colo.do/docs), [Repo](https://github.com/drivly/colo.do), [Roadmap](https://github.com/drivly/colo.do/issues/1), [Issues](https://github.com/drivly/colo.do/issues)) 
