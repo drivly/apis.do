@@ -44,6 +44,7 @@ Utilities:
   Flatten.do: JSON Flattening API
   Filter.do: Data Filter API
   Iterate.do: Iteration API
+  CRON.do: CRON Scheduler API
   camel.case.do: camelCaseKeys Transformation API
   dot.case.do: dot.case.keys Transformation API
   human.case.do: Human Case Keys Transformation API
