@@ -271,9 +271,9 @@ Integrations:
   Zap.do: Zapier Zap Generation API
   
 Assets:
-  Icons: Icon Search API & CDN
-  Images: Image Search API & CDN
-  Open Graph: Dynamic Open Graph Image Generation
+  Icons.do: Icon Search API & CDN
+  Images.do: Image Search API & CDN
+  OpenGraph.do: Dynamic Open Graph Image Generation
   
 SaaS:
   Analytics.do: Simple Analytics API
