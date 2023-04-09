@@ -10,7 +10,7 @@ export class API {
     this.metadata = { ...metadata }
     this.options = { ...options || {} }
 
-    this.sentryDsn = this.options.sentryDsn
+    this.sentryDsn = this?.options?.sentryDsn
 
     this.examples = this.options.examples
 
@@ -52,7 +52,7 @@ export class API {
 
     console.log(this.options)
 
-    const sentryDsn = this.options.sentryDsn || env.SENTRY_DSN
+    const sentryDsn = this.sentryDsn || env.SENTRY_DSN
 
     let sentry = sentryDsn ?
       new Toucan({
