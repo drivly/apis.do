@@ -1,17 +1,43 @@
-# APIs.do - Hypermedia API Directory
+# APIs.do - Driv.ly Workers framework
 
+## Example
 
-## Getting Started
-
-Import your package into your project:
+This example shows off the following features:
+- Automatic API documentation
+- Link generation
+- Query parameter modification
+- Query modification for multiple values (cities, zip codes, credit scores, etc.)
 
 ```js
-import { apis, json } from 'https://pkg.do/apis.do'
+import { API, json, requiresAuth, modifyQuery, modifyQueryMultiple, schemaGen } from 'apis.do'
 
+const api = new API({
+  name: 'domain.do',
+  description: '🤖 API'
+}, {
+  examples: {
+    createVehicle: '/hello/0'
+  }
+})
 
+api.get('/:hello/:worldNumber?', req => {
+  return {
+    links: {
+      self: req.url,
+      next: modifyQuery(req.url, { worldNumber: req.params.worldNumber + 1 }),
+      'Create Plan By City': modifyQueryMultiple(req.url, 'zip', req.ctx.cities)
+    },
+    data: {
+      hello: req.params.hello,
+      worldNumber: req.params.worldNumber
+    }
+  }
+})
 
+export default {
+  fetch: api.fetch
+}
 ```
-
 
 ## [Drivly Open](https://driv.ly/open) – Accelerating Innovation through Open Source
 

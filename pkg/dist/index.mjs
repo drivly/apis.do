@@ -37,6 +37,269 @@ var e = ({ base: e2 = "", routes: r = [] } = {}) => ({ __proto__: new Proxy({}, 
     }
 } });
 
+// node_modules/path-to-regexp/dist.es2015/index.js
+function lexer(str) {
+  var tokens = [];
+  var i = 0;
+  while (i < str.length) {
+    var char = str[i];
+    if (char === "*" || char === "+" || char === "?") {
+      tokens.push({ type: "MODIFIER", index: i, value: str[i++] });
+      continue;
+    }
+    if (char === "\\") {
+      tokens.push({ type: "ESCAPED_CHAR", index: i++, value: str[i++] });
+      continue;
+    }
+    if (char === "{") {
+      tokens.push({ type: "OPEN", index: i, value: str[i++] });
+      continue;
+    }
+    if (char === "}") {
+      tokens.push({ type: "CLOSE", index: i, value: str[i++] });
+      continue;
+    }
+    if (char === ":") {
+      var name = "";
+      var j = i + 1;
+      while (j < str.length) {
+        var code = str.charCodeAt(j);
+        if (
+          // `0-9`
+          code >= 48 && code <= 57 || // `A-Z`
+          code >= 65 && code <= 90 || // `a-z`
+          code >= 97 && code <= 122 || // `_`
+          code === 95
+        ) {
+          name += str[j++];
+          continue;
+        }
+        break;
+      }
+      if (!name)
+        throw new TypeError("Missing parameter name at ".concat(i));
+      tokens.push({ type: "NAME", index: i, value: name });
+      i = j;
+      continue;
+    }
+    if (char === "(") {
+      var count = 1;
+      var pattern = "";
+      var j = i + 1;
+      if (str[j] === "?") {
+        throw new TypeError('Pattern cannot start with "?" at '.concat(j));
+      }
+      while (j < str.length) {
+        if (str[j] === "\\") {
+          pattern += str[j++] + str[j++];
+          continue;
+        }
+        if (str[j] === ")") {
+          count--;
+          if (count === 0) {
+            j++;
+            break;
+          }
+        } else if (str[j] === "(") {
+          count++;
+          if (str[j + 1] !== "?") {
+            throw new TypeError("Capturing groups are not allowed at ".concat(j));
+          }
+        }
+        pattern += str[j++];
+      }
+      if (count)
+        throw new TypeError("Unbalanced pattern at ".concat(i));
+      if (!pattern)
+        throw new TypeError("Missing pattern at ".concat(i));
+      tokens.push({ type: "PATTERN", index: i, value: pattern });
+      i = j;
+      continue;
+    }
+    tokens.push({ type: "CHAR", index: i, value: str[i++] });
+  }
+  tokens.push({ type: "END", index: i, value: "" });
+  return tokens;
+}
+function parse(str, options) {
+  if (options === void 0) {
+    options = {};
+  }
+  var tokens = lexer(str);
+  var _a = options.prefixes, prefixes = _a === void 0 ? "./" : _a;
+  var defaultPattern = "[^".concat(escapeString(options.delimiter || "/#?"), "]+?");
+  var result = [];
+  var key = 0;
+  var i = 0;
+  var path = "";
+  var tryConsume = function(type) {
+    if (i < tokens.length && tokens[i].type === type)
+      return tokens[i++].value;
+  };
+  var mustConsume = function(type) {
+    var value2 = tryConsume(type);
+    if (value2 !== void 0)
+      return value2;
+    var _a2 = tokens[i], nextType = _a2.type, index = _a2.index;
+    throw new TypeError("Unexpected ".concat(nextType, " at ").concat(index, ", expected ").concat(type));
+  };
+  var consumeText = function() {
+    var result2 = "";
+    var value2;
+    while (value2 = tryConsume("CHAR") || tryConsume("ESCAPED_CHAR")) {
+      result2 += value2;
+    }
+    return result2;
+  };
+  while (i < tokens.length) {
+    var char = tryConsume("CHAR");
+    var name = tryConsume("NAME");
+    var pattern = tryConsume("PATTERN");
+    if (name || pattern) {
+      var prefix = char || "";
+      if (prefixes.indexOf(prefix) === -1) {
+        path += prefix;
+        prefix = "";
+      }
+      if (path) {
+        result.push(path);
+        path = "";
+      }
+      result.push({
+        name: name || key++,
+        prefix,
+        suffix: "",
+        pattern: pattern || defaultPattern,
+        modifier: tryConsume("MODIFIER") || ""
+      });
+      continue;
+    }
+    var value = char || tryConsume("ESCAPED_CHAR");
+    if (value) {
+      path += value;
+      continue;
+    }
+    if (path) {
+      result.push(path);
+      path = "";
+    }
+    var open = tryConsume("OPEN");
+    if (open) {
+      var prefix = consumeText();
+      var name_1 = tryConsume("NAME") || "";
+      var pattern_1 = tryConsume("PATTERN") || "";
+      var suffix = consumeText();
+      mustConsume("CLOSE");
+      result.push({
+        name: name_1 || (pattern_1 ? key++ : ""),
+        pattern: name_1 && !pattern_1 ? defaultPattern : pattern_1,
+        prefix,
+        suffix,
+        modifier: tryConsume("MODIFIER") || ""
+      });
+      continue;
+    }
+    mustConsume("END");
+  }
+  return result;
+}
+function escapeString(str) {
+  return str.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1");
+}
+function flags(options) {
+  return options && options.sensitive ? "" : "i";
+}
+function regexpToRegexp(path, keys) {
+  if (!keys)
+    return path;
+  var groupsRegex = /\((?:\?<(.*?)>)?(?!\?)/g;
+  var index = 0;
+  var execResult = groupsRegex.exec(path.source);
+  while (execResult) {
+    keys.push({
+      // Use parenthesized substring match if available, index otherwise
+      name: execResult[1] || index++,
+      prefix: "",
+      suffix: "",
+      modifier: "",
+      pattern: ""
+    });
+    execResult = groupsRegex.exec(path.source);
+  }
+  return path;
+}
+function arrayToRegexp(paths, keys, options) {
+  var parts = paths.map(function(path) {
+    return pathToRegexp(path, keys, options).source;
+  });
+  return new RegExp("(?:".concat(parts.join("|"), ")"), flags(options));
+}
+function stringToRegexp(path, keys, options) {
+  return tokensToRegexp(parse(path, options), keys, options);
+}
+function tokensToRegexp(tokens, keys, options) {
+  if (options === void 0) {
+    options = {};
+  }
+  var _a = options.strict, strict = _a === void 0 ? false : _a, _b = options.start, start = _b === void 0 ? true : _b, _c = options.end, end = _c === void 0 ? true : _c, _d = options.encode, encode = _d === void 0 ? function(x) {
+    return x;
+  } : _d, _e = options.delimiter, delimiter = _e === void 0 ? "/#?" : _e, _f = options.endsWith, endsWith = _f === void 0 ? "" : _f;
+  var endsWithRe = "[".concat(escapeString(endsWith), "]|$");
+  var delimiterRe = "[".concat(escapeString(delimiter), "]");
+  var route = start ? "^" : "";
+  for (var _i = 0, tokens_1 = tokens; _i < tokens_1.length; _i++) {
+    var token = tokens_1[_i];
+    if (typeof token === "string") {
+      route += escapeString(encode(token));
+    } else {
+      var prefix = escapeString(encode(token.prefix));
+      var suffix = escapeString(encode(token.suffix));
+      if (token.pattern) {
+        if (keys)
+          keys.push(token);
+        if (prefix || suffix) {
+          if (token.modifier === "+" || token.modifier === "*") {
+            var mod = token.modifier === "*" ? "?" : "";
+            route += "(?:".concat(prefix, "((?:").concat(token.pattern, ")(?:").concat(suffix).concat(prefix, "(?:").concat(token.pattern, "))*)").concat(suffix, ")").concat(mod);
+          } else {
+            route += "(?:".concat(prefix, "(").concat(token.pattern, ")").concat(suffix, ")").concat(token.modifier);
+          }
+        } else {
+          if (token.modifier === "+" || token.modifier === "*") {
+            route += "((?:".concat(token.pattern, ")").concat(token.modifier, ")");
+          } else {
+            route += "(".concat(token.pattern, ")").concat(token.modifier);
+          }
+        }
+      } else {
+        route += "(?:".concat(prefix).concat(suffix, ")").concat(token.modifier);
+      }
+    }
+  }
+  if (end) {
+    if (!strict)
+      route += "".concat(delimiterRe, "?");
+    route += !options.endsWith ? "$" : "(?=".concat(endsWithRe, ")");
+  } else {
+    var endToken = tokens[tokens.length - 1];
+    var isEndDelimited = typeof endToken === "string" ? delimiterRe.indexOf(endToken[endToken.length - 1]) > -1 : endToken === void 0;
+    if (!strict) {
+      route += "(?:".concat(delimiterRe, "(?=").concat(endsWithRe, "))?");
+    }
+    if (!isEndDelimited) {
+      route += "(?=".concat(delimiterRe, "|").concat(endsWithRe, ")");
+    }
+  }
+  return new RegExp(route, flags(options));
+}
+function pathToRegexp(path, keys, options) {
+  if (path instanceof RegExp)
+    return regexpToRegexp(path, keys);
+  if (Array.isArray(path))
+    return arrayToRegexp(path, keys, options);
+  return stringToRegexp(path, keys, options);
+}
+
 // node_modules/@sentry/utils/esm/is.js
 var objectToString = Object.prototype.toString;
 function isError(wat) {
@@ -1392,10 +1655,10 @@ var Scope = class {
   /**
    * @inheritDoc
    */
-  setUser(user2) {
-    this._user = user2 || {};
+  setUser(user) {
+    this._user = user || {};
     if (this._session) {
-      updateSession(this._session, { user: user2 });
+      updateSession(this._session, { user });
     }
     this._notifyScopeListeners();
     return this;
@@ -1917,10 +2180,10 @@ var Hub = class {
   /**
    * @inheritDoc
    */
-  setUser(user2) {
+  setUser(user) {
     const scope = this.getScope();
     if (scope)
-      scope.setUser(user2);
+      scope.setUser(user);
   }
   /**
    * @inheritDoc
@@ -3114,11 +3377,11 @@ var _RequestData = class {
 var RequestData = _RequestData;
 _options = new WeakMap();
 __publicField(RequestData, "id", "RequestData");
-function toEventUser(user2, request, options) {
+function toEventUser(user, request, options) {
   const ip_address = request.headers.get("CF-Connecting-IP");
   const { allowedIps } = options;
-  const newUser = { ...user2 };
-  if (!("ip_address" in user2) && // If ip_address is already set from explicitly called setUser, we don't want to overwrite it
+  const newUser = { ...user };
+  if (!("ip_address" in user) && // If ip_address is already set from explicitly called setUser, we don't want to overwrite it
   ip_address && allowedIps !== void 0 && testAllowlist(ip_address, allowedIps)) {
     newUser.ip_address = ip_address;
   }
@@ -3401,43 +3664,51 @@ var Toucan = class extends Hub {
 
 // index.js
 var router = e();
+var Instance;
 var API = class {
   constructor(metadata, options) {
-    this.metadata = { ...metadata };
-    this.options = { ...options || {} };
-    this.sentryDsn = this.options.sentryDsn;
+    Instance = this;
+    this.metadata = metadata || {};
+    this.options = options || {};
+    this.sentryDsn = this.options.sentryDsn || null;
     this.examples = this.options.examples;
     this.routes = {};
   }
+  createRoute(method, path, ...handlers) {
+    let documentation = {};
+    if (typeof handlers[handlers.length - 1] === "object") {
+      documentation = handlers.pop();
+    }
+    this.routes[`${method} ${path}`] = documentation;
+    let keys = [];
+    const reg = pathToRegexp(path, keys);
+    for (let param of Object.keys(documentation.parameters || {})) {
+      if (typeof documentation.parameters[param] === "string") {
+        const required = keys.find((key) => key.name === param).modifier != "?";
+        documentation.parameters[param] = {
+          type: documentation.parameters[param],
+          required
+        };
+      }
+    }
+    if (this.examples) {
+      for (let example of Object.keys(this.examples)) {
+        if (reg.test(this.examples[example])) {
+          this.routes[`${method} ${path}`].example = `https://<hostname>${this.examples[example]}`;
+        }
+      }
+    }
+    return router[method.toLowerCase()](path, ...handlers);
+  }
   get() {
-    const [path, ...handlers] = arguments;
-    this.routes[`GET ${path}`] = handlers;
-    return router.get(...arguments);
-  }
-  post() {
-    const [path, ...handlers] = arguments;
-    this.routes[`POST ${path}`] = handlers;
-    return router.post(...arguments);
-  }
-  put() {
-    const [path, ...handlers] = arguments;
-    this.routes[`PUT ${path}`] = handlers;
-    return router.put(...arguments);
-  }
-  delete() {
-    const [path, ...handlers] = arguments;
-    this.routes[`DELETE ${path}`] = handlers;
-    return router.delete(...arguments);
-  }
-  options() {
-    const [path, ...handlers] = arguments;
-    this.routes[`OPTIONS ${path}`] = handlers;
-    return router.options(...arguments);
+    return this.createRoute("GET", ...arguments);
   }
   async fetch(req, env, ctx) {
-    const { hostname } = new URL(req.url);
-    console.log(this.options);
-    const sentryDsn = this.options.sentryDsn || env.SENTRY_DSN;
+    return Instance.handle.call(Instance, req, env, ctx);
+  }
+  async handle(req, env, ctx) {
+    const { hostname, pathname } = new URL(req.url);
+    const sentryDsn = this.sentryDsn || env.SENTRY_DSN;
     let sentry = sentryDsn ? new Toucan({
       dsn: sentryDsn,
       context: ctx,
@@ -3452,22 +3723,38 @@ var API = class {
         }
       });
       const {
-        user: user2
+        user
       } = await fetch(authReq).then((res2) => res2.json());
-      this.metadata.endpoints = Object.keys(this.routes);
-      req.user = user2;
+      req.user = user;
       req.metadata = this.metadata;
       if (this.options.requireAuth) {
-        if (!user2) {
+        if (!user) {
           return json({
             api: this.metadata,
             data: {
               error: "You must be logged in to access this API.",
               link: `https://${hostname}/login`
             },
-            user: user2
+            user
           });
         }
+      }
+      if (pathname == "/api") {
+        const payload = JSON.stringify({
+          api: this.metadata,
+          endpoints: this.routes,
+          examples: this.examples,
+          user
+        }).replaceAll("<hostname>", hostname);
+        return new Response(payload, {
+          headers: {
+            "content-type": "application/json; charset=utf-8",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+            "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
+            "Cache-Control": "no-cache, no-store, must-revalidate"
+          }
+        });
       }
       const res = await router.handle(req, env, ctx);
       if (res instanceof Response) {
@@ -3478,17 +3765,33 @@ var API = class {
         resBody = {
           api: this.metadata,
           ...res,
-          user: user2
+          user
         };
       } else {
         resBody = {
           api: this.metadata,
           data: res,
-          user: user2
+          user
         };
       }
+      if (res.links) {
+        const editLinks = (links) => {
+          for (let link in links) {
+            if (typeof links[link] === "object") {
+              editLinks(links[link]);
+            } else {
+              if (!links[link].startsWith("http")) {
+                links[link] = `https://${hostname}${pathname}?${links[link]}`;
+              } else {
+                links[link] = links[link];
+              }
+            }
+          }
+        };
+        editLinks(res.links);
+      }
       return new Response(
-        JSON.stringify(resBody, null, 2),
+        JSON.stringify(resBody, null, 2).replaceAll("<hostname>", hostname),
         {
           headers: {
             "content-type": "application/json; charset=utf-8",
@@ -3508,7 +3811,7 @@ var API = class {
             error: e2.message,
             stack: e2.stack
           },
-          user
+          user: req.user || {}
         }, null, 2),
         {
           headers: {
@@ -3555,12 +3858,54 @@ var pascalCase = (str) => {
 var kebabCase = (str) => {
   return str.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
 };
+var modifyQuery = (url, params) => {
+  const { searchParams } = new URL(url);
+  for (const [key, value] of Object.entries(params)) {
+    searchParams.set(key, value);
+  }
+  return searchParams.toString();
+};
+var modifyQueryMultiple = (url, key, obj) => {
+  const { searchParams } = new URL(url);
+  const newParams = Object.entries(obj).reduce((acc, [name, value]) => {
+    acc[name] = modifyQuery(url, { [key]: value });
+    return acc;
+  }, {});
+  return newParams;
+};
+var schemaGen = (obj) => {
+  const schema = {};
+  for (const key in obj) {
+    const value = obj[key];
+    if (typeof value === "string") {
+      schema[key] = { type: "string" };
+    } else if (typeof value === "number") {
+      schema[key] = { type: "number" };
+    } else if (typeof value === "boolean") {
+      schema[key] = { type: "boolean" };
+    } else if (Array.isArray(value)) {
+      schema[key] = {
+        type: "array",
+        items: schemaGen(value[0])
+      };
+    } else if (typeof value === "object") {
+      schema[key] = {
+        type: "object",
+        properties: schemaGen(value)
+      };
+    }
+  }
+  return schema;
+};
 export {
   API,
   camelCase,
   json,
   kebabCase,
+  modifyQuery,
+  modifyQueryMultiple,
   pascalCase,
   requiresAuth,
+  schemaGen,
   snakeCase
 };

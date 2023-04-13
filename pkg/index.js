@@ -2,55 +2,76 @@ import { Router } from 'itty-router'
 import { pathToRegexp } from 'path-to-regexp'
 import { Toucan } from 'toucan-js'
 
-
 const router = Router()
+
+var Instance
 
 export class API {
   constructor (metadata, options) {
-    this.metadata = { ...metadata }
-    this.options = { ...options || {} }
+    Instance = this
+    this.metadata = metadata || {}
+    this.options = options || {}
 
-    this.sentryDsn = this?.options?.sentryDsn
-
+    this.sentryDsn = this.options.sentryDsn || null
     this.examples = this.options.examples
 
     this.routes = {}
   }
 
+  createRoute(method, path, ...handlers) {
+    // Check if the last handler is an object. If so, this is our documentation object.
+
+    let documentation = {}
+
+    if (typeof handlers[handlers.length - 1] === 'object') {
+      documentation = handlers.pop()
+    }
+  
+    this.routes[`${method} ${path}`] = documentation
+    
+    let keys = []
+    const reg = pathToRegexp(path, keys)
+
+    // Unpack the documentation object from { param: 'type' } to { param: { type: 'type', required: true|false } }
+
+    for (let param of Object.keys(documentation.parameters || {})) {
+      if (typeof documentation.parameters[param] === 'string') {
+        
+        const required = keys.find(key => key.name === param).modifier != '?'
+        
+        documentation.parameters[param] = {
+          type: documentation.parameters[param],
+          required
+        }
+      }
+    }
+    
+    // Find the example that this route is describing
+    if (this.examples) {
+      // Examples is an object such as { createNewUser: '/users/create' }
+      for (let example of Object.keys(this.examples)) {
+        if (reg.test(this.examples[example])) {
+          this.routes[`${method} ${path}`].example = `https://<hostname>${this.examples[example]}`
+        }
+      }
+    }
+
+    
+
+    return router[method.toLowerCase()](path, ...handlers)
+  }
+
   get() {
-    const [ path, ...handlers ] = arguments
-    this.routes[`GET ${path}`] = handlers
-    return router.get(...arguments)
-  }
-
-  post() {
-    const [ path, ...handlers ] = arguments
-    this.routes[`POST ${path}`] = handlers
-    return router.post(...arguments)
-  }
-
-  put() {
-    const [ path, ...handlers ] = arguments
-    this.routes[`PUT ${path}`] = handlers
-    return router.put(...arguments)
-  }
-
-  delete() {
-    const [ path, ...handlers ] = arguments
-    this.routes[`DELETE ${path}`] = handlers
-    return router.delete(...arguments)
-  }
-
-  options() {
-    const [ path, ...handlers ] = arguments
-    this.routes[`OPTIONS ${path}`] = handlers
-    return router.options(...arguments)
+    return this.createRoute('GET', ...arguments)
   }
 
   async fetch(req, env, ctx) {
-    const { hostname } = new URL(req.url)
+    // This is a hack to get around the fact that `this` is not available in the global scope.
+    return Instance.handle.call(Instance, req, env, ctx)
+  }
 
-    console.log(this.options)
+  async handle(req, env, ctx) {
+    const { hostname, pathname } = new URL(req.url)
 
     const sentryDsn = this.sentryDsn || env.SENTRY_DSN
 
@@ -72,10 +93,9 @@ export class API {
       const {
         user
       } = await fetch(authReq).then(res => res.json())
-
-      this.metadata.endpoints = Object.keys(this.routes)
-    
+      
       req.user = user
+    
       req.metadata = this.metadata
 
       if (this.options.requireAuth) {
@@ -89,6 +109,25 @@ export class API {
             user,
           })
         }
+      }
+
+      if (pathname == '/api') {
+        const payload = JSON.stringify({
+          api: this.metadata,
+          endpoints: this.routes,
+          examples: this.examples,
+          user
+        }).replaceAll('<hostname>', hostname)
+
+        return new Response(payload, {
+          headers: {
+            'content-type': 'application/json; charset=utf-8',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+            'Access-Control-Allow-Headers': 'Content-Type, Authorization, X-Requested-With',
+            'Cache-Control': 'no-cache, no-store, must-revalidate'
+          }
+        })
       }
 
       const res = await router.handle(req, env, ctx)
@@ -115,8 +154,32 @@ export class API {
         }
       }
 
+      if (res.links) {
+        // Modify each link to include the hostname
+        // Links is an object, so we can't use map
+
+        // Link could be a nested object, so we need to recursively edit the links
+        const editLinks = (links) => {
+          for (let link in links) {
+            if (typeof links[link] === 'object') {
+              editLinks(links[link])
+            } else {
+              if (!links[link].startsWith('http')) {
+                links[link] = `https://${hostname}${pathname}?${links[link]}`
+              } else {
+                links[link] = links[link]
+              }
+            }
+          }
+        }
+
+        editLinks(res.links)
+      }
+
       return new Response(
-        JSON.stringify(resBody, null, 2),
+        JSON.stringify(resBody, null, 2)
+          .replaceAll('<hostname>', hostname)
+        ,
         {
           headers: {
             'content-type': 'application/json; charset=utf-8',
@@ -137,7 +200,7 @@ export class API {
             error: e.message,
             stack: e.stack
           },
-          user
+          user: req.user || {}
         }, null, 2),
         {
           headers: {
@@ -195,3 +258,60 @@ export const kebabCase = (str) => {
   return str.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase()
 }
 
+export const modifyQuery = (url, params) => {
+  // This function is used to modify the query string of a URL.
+  // Replace the query string with the new params.
+  const { searchParams } = new URL(url)
+
+  for (const [ key, value ] of Object.entries(params)) {
+    searchParams.set(key, value)
+  }
+
+  return searchParams.toString()
+}
+
+export const modifyQueryMultiple = (url, key, obj) => {
+  // Returns a URL with a query string that has been modified
+  // Obj is a key value pair of name: value. But we need to
+  // Return another object like { name: '?key=value' }
+
+  const { searchParams } = new URL(url)
+
+  const newParams = Object.entries(obj).reduce((acc, [ name, value ]) => {
+    acc[name] = modifyQuery(url, { [key]: value })
+    return acc
+  }, {})
+
+  return newParams
+}
+
+export const schemaGen = (obj) => {
+  // Returns an OpenAPI schema object
+  // Recursively generates schema for nested objects
+
+  const schema = {}
+
+  for (const key in obj) {
+    const value = obj[key]
+
+    if (typeof value === 'string') {
+      schema[key] = { type: 'string' }
+    } else if (typeof value === 'number') {
+      schema[key] = { type: 'number' }
+    } else if (typeof value === 'boolean') {
+      schema[key] = { type: 'boolean' }
+    } else if (Array.isArray(value)) {
+      schema[key] = {
+        type: 'array',
+        items: schemaGen(value[0])
+      }
+    } else if (typeof value === 'object') {
+      schema[key] = {
+        type: 'object',
+        properties: schemaGen(value)
+      }
+    }
+  }
+
+  return schema
+}
