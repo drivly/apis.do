@@ -35,6 +35,13 @@ api.get('/:hello/:worldNumber?', req => {
       worldNumber: req.params.worldNumber
     }
   }
+}, {
+  description: 'Hello world',
+  parameters: {
+    hello: 'string',
+    worldNumber: 'number'
+  },
+  response: schemaGen({ hello: '', worldNumber: 0 })
 })
 
 export default {
