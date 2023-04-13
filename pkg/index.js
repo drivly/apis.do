@@ -16,6 +16,10 @@ export class API {
     this.examples = this.options.examples
 
     this.routes = {}
+
+    this.hostname = '' // Filled in after we handle our first request
+    this.env = {}
+    this.ctx = {}
   }
 
   createRoute(method, path, ...handlers) {
@@ -56,13 +60,33 @@ export class API {
       }
     }
 
-    
-
     return router[method.toLowerCase()](path, ...handlers)
   }
 
   get() {
     return this.createRoute('GET', ...arguments)
+  }
+
+  async debug() {
+    // Logs the current state of the API to the console.
+    // For example [Sentry] Active or [Sentry] Inactive - Missing ENV variable or DSN string
+
+    const checks = [
+      {
+        name: 'Sentry',
+        check: () => this.sentryDsn || env.SENTRY_DSN,
+        message: 'Active',
+        error: 'Inactive - Missing ENV variable or DSN string'
+      }
+    ]
+
+    for (let check of checks) {
+      if (check.check()) {
+        console.log(`[${check.name}] ${check.message}`)
+      } else {
+        console.log(`[${check.name}] ${check.error}`)
+      }
+    }
   }
 
   async fetch(req, env, ctx) {
@@ -72,6 +96,10 @@ export class API {
 
   async handle(req, env, ctx) {
     const { hostname, pathname } = new URL(req.url)
+
+    this.hostname = hostname
+    this.env = env
+    this.ctx = ctx
 
     const sentryDsn = this.sentryDsn || env.SENTRY_DSN
 
@@ -83,18 +111,23 @@ export class API {
       }).captureException : () => {}
 
     try {
-      const authReq = new Request('https://ctx.do/api', {
+      const authReq = new Request('https://ctx.vin/api', {
         headers: {
           cookie: req.headers.get('cookie'),
           authorization: req.headers.get('authorization')
         }
       })
     
-      const {
-        user
-      } = await fetch(authReq).then(res => res.json())
-      
-      req.user = user
+      if (!env.CTX) console.warn('[CTX] env.CTX is undefined, using fetch to ctx.vin.')
+
+      const contextVin = env.CTX != undefined ? await env.CTX.fetch(authReq).then(x=>x.json()) : await fetch(authReq).then(res => res.json())
+
+      req.user = contextVin.user
+      req.ctx = contextVin
+
+      const user = req.user
+
+      req.waitUntil = ctx.waitUntil
     
       req.metadata = this.metadata
 

@@ -1,5 +1,8 @@
 # APIs.do - Driv.ly Workers framework
 
+## Important note:
+If you dont link a CTX service worker, the API will default to fetching data from ctx.vin. This means that the IP address and CF-Ray-Id headers will be incorrect for the request. If you want to use the correct IP address and CF-Ray-Id headers, you must link a CTX service worker.
+
 ## Example
 
 This example shows off the following features:
@@ -38,6 +41,16 @@ export default {
   fetch: api.fetch
 }
 ```
+
+## Request properties
+Most of the properties are self-explanatory, but here are some modifications to the request object provided by itty-router:
+
+- request.user - The user object from ctx.vin
+- request.ctx - The context object from ctx.vin
+- request.waitUntil - The waitUntil function exposed by Cloudflare Workers
+- request.params - The params object from itty-router
+- request.query - The query object from itty-router
+- request.body - The body object from itty-router
 
 ## [Drivly Open](https://driv.ly/open) – Accelerating Innovation through Open Source
 
