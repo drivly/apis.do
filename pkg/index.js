@@ -124,6 +124,7 @@ export class API {
 
       req.user = contextVin.user
       req.ctx = contextVin
+      req.env = env
 
       const user = req.user
 
