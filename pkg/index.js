@@ -132,7 +132,7 @@ export class API {
     
       req.metadata = this.metadata
 
-      if (this.options.requireAuth) {
+      if (this?.options?.requireAuth) {
         if (!user) {
           return json({
             api: this.metadata,
@@ -164,7 +164,7 @@ export class API {
         })
       }
 
-      const res = await router.handle(req, env, ctx)
+      let res = await router.handle(req, env, ctx) || {} // If we get a null result back, just use a blank object
 
       if (res instanceof Response) {
         return res
@@ -226,6 +226,8 @@ export class API {
       )
     } catch (e) {
       sentry(e)
+
+      console.error(e) // Echo the error to the console
 
       return new Response(
         JSON.stringify({
