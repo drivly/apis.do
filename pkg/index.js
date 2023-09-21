@@ -111,14 +111,14 @@ export class API {
       }).captureException : () => {}
 
     try {
-      const authReq = new Request('https://ctx.vin/api', {
+      const authReq = new Request('https://ctx.do/api', {
         headers: {
           cookie: req.headers.get('cookie'),
           authorization: req.headers.get('authorization')
         }
       })
     
-      if (!env.CTX) console.warn('[CTX] env.CTX is undefined, using fetch to ctx.vin.')
+      if (!env.CTX) console.warn('[CTX] env.CTX is undefined, using fetch to ctx.do.')
 
       const contextVin = env.CTX != undefined ? await env.CTX.fetch(authReq).then(x=>x.json()) : await fetch(authReq).then(res => res.json())
 
