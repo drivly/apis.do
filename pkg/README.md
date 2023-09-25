@@ -1,11 +1,13 @@
 # APIs.do - Driv.ly Workers framework
 
 ## Important note:
-If you dont link a CTX service worker, the API will default to fetching data from ctx.vin. This means that the IP address and CF-Ray-Id headers will be incorrect for the request. If you want to use the correct IP address and CF-Ray-Id headers, you must link a CTX service worker.
+
+If you don't link a CTX service worker, the API will default to fetching data from ctx.do. This means that the IP address and CF-Ray-Id headers will be incorrect for the request. If you want to use the correct IP address and CF-Ray-Id headers, you must link a CTX service worker.
 
 ## Example
 
 This example shows off the following features:
+
 - Automatic API documentation
 - Link generation
 - Query parameter modification
@@ -50,6 +52,7 @@ export default {
 ```
 
 ## Request properties
+
 Most of the properties are self-explanatory, but here are some modifications to the request object provided by itty-router:
 
 - request.user - The user object from ctx.vin
@@ -69,8 +72,7 @@ Our [Drivly Open Philosophy](https://philosophy.do) has these key principles:
 4. [Communicate through APIs not Meetings](https://driv.ly/open/communicate-through-apis-not-meetings)
 5. [APIs Should Do One Thing, and Do It Well](https://driv.ly/open/apis-do-one-thing)
 
-
-###  🚀 We're Hiring!
+### 🚀 We're Hiring!
 
 [Driv.ly](https://driv.ly) is deconstructing the monolithic physical dealership into simple APIs enabling anyone to buy and sell cars online, and we're funded by some of the [biggest names](https://twitter.com/TurnerNovak) in [automotive](https://fontinalis.com/team/#bill-ford) and [finance & insurance](https://www.detroit.vc)
 
