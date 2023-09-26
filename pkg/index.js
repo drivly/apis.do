@@ -145,7 +145,7 @@ export class API {
         }
       }
 
-      if (pathname == '/api') {
+      if (pathname == '/api' || pathname == '/') {
         const payload = JSON.stringify({
           api: this.metadata,
           endpoints: this.routes,
