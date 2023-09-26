@@ -120,7 +120,7 @@ export class API {
     
       if (!env.CTX) console.warn('[CTX] env.CTX is undefined, using fetch to ctx.do.')
 
-      const contextVin = env.CTX != undefined ? await env.CTX.fetch(authReq).then(x=>x.json()) : await fetch(authReq).then(res => res.json())
+      const contextVin = env.CTX != undefined ? await env.CTX.fetch(req).then(x=>x.json()) : await fetch(authReq).then(res => res.json())
 
       req.user = contextVin.user
       req.ctx = contextVin
