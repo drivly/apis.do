@@ -133,7 +133,7 @@ export class API {
       req.metadata = this.metadata
 
       if (this?.options?.requireAuth) {
-        if (!user) {
+        if (!user?.authenticated) {
           return json({
             api: this.metadata,
             data: {
