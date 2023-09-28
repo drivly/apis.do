@@ -120,10 +120,10 @@ export class API {
     
       if (!env.CTX) console.warn('[CTX] env.CTX is undefined, using fetch to ctx.do.')
 
-      const contextVin = env.CTX != undefined ? await env.CTX.fetch(req).then(x=>x.json()) : await fetch(authReq).then(res => res.json())
+      const context = env.CTX != undefined ? await env.CTX.fetch(req).then(x=>x.json()) : await fetch(authReq).then(res => res.json())
 
-      req.user = contextVin.user
-      req.ctx = contextVin
+      req.user = context.user
+      req.ctx = context
       req.env = env
 
       const user = req.user
@@ -133,16 +133,8 @@ export class API {
       req.metadata = this.metadata
 
       if (this?.options?.requireAuth) {
-        if (!user?.authenticated) {
-          return json({
-            api: this.metadata,
-            data: {
-              error: 'You must be logged in to access this API.',
-              link: `https://${hostname}/login`
-            },
-            user,
-          })
-        }
+        const redirect = loginRedirect(hostname, user, this.metadata)
+        if (redirect) return redirect
       }
 
       if (pathname == '/api') {
@@ -257,15 +249,18 @@ export const json=(e,t)=>new Response(JSON.stringify(e,null,2),{headers:{"conten
 export const requiresAuth = async (req) => {
   // Middleware version of our auth system
   const { hostname } = new URL(req.url)
+  return loginRedirect(hostname, req.user, req.metadata)
+}
 
-  if (!req.user.authenticated) {
+function loginRedirect(hostname, user, metadata) {
+  if (!user?.authenticated) {
     return json({
-      api: req.metadata,
+      api: metadata,
       data: {
         error: 'You must be logged in to access this API.',
         link: `https://${hostname}/login`
       },
-      user: req.user,
+      user,
     }, {
       status: 403
     })
